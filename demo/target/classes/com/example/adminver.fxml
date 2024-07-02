@@ -13,15 +13,20 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" style="-fx-background-color: #4F6F52;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+   prefHeight="735.0" prefWidth="1300.0" style="-fx-background-color: #4F6F52;"
+   xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane prefHeight="735.0" prefWidth="1300.0">
          <left>
-            <VBox prefHeight="735.0" prefWidth="284.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 15px;" BorderPane.alignment="CENTER">
+            <VBox prefHeight="735.0" prefWidth="284.0"
+               style="-fx-background-color: #D9D9D9; -fx-background-radius: 15px;"
+               BorderPane.alignment="CENTER">
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <ImageView fitHeight="130.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="130.0" fitWidth="180.0" pickOnBounds="true"
+                           preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../Group%205.png" />
                            </image>
@@ -30,7 +35,8 @@
                   </VBox>
                   <VBox alignment="TOP_CENTER" prefHeight="363.0" prefWidth="284.0" spacing="20.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="143.0" style="-fx-background-color: transparents;">
+                        <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="143.0"
+                           style="-fx-background-color: transparents;">
                            <graphic>
                               <ImageView>
                                  <image>
@@ -39,7 +45,9 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button layoutX="80.0" layoutY="10.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="143.0" style="-fx-background-color: transparents;">
+                        <Button layoutX="80.0" layoutY="10.0" mnemonicParsing="false"
+                           prefHeight="71.0" prefWidth="143.0"
+                           style="-fx-background-color: transparents;">
                            <graphic>
                               <ImageView>
                                  <image>
@@ -48,7 +56,9 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button layoutX="80.0" layoutY="81.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="143.0" style="-fx-background-color: transparents;">
+                        <Button layoutX="80.0" layoutY="81.0" mnemonicParsing="false"
+                           prefHeight="71.0" prefWidth="143.0"
+                           style="-fx-background-color: transparents;">
                            <graphic>
                               <ImageView>
                                  <image>
@@ -57,7 +67,9 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button layoutX="80.0" layoutY="143.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="143.0" style="-fx-background-color: #38B543; -fx-background-radius: 15px;">
+                        <Button layoutX="80.0" layoutY="143.0" mnemonicParsing="false"
+                           prefHeight="71.0" prefWidth="143.0"
+                           style="-fx-background-color: #38B543; -fx-background-radius: 15px;">
                            <graphic>
                               <ImageView>
                                  <image>
@@ -73,7 +85,8 @@
                   </VBox>
                   <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: transparents;">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="42.0"
+                           prefWidth="89.0" style="-fx-background-color: transparents;">
                            <graphic>
                               <ImageView>
                                  <image>
@@ -96,22 +109,28 @@
                   <VBox prefHeight="260.0" prefWidth="200.0">
                      <children>
                         <ScrollPane prefHeight="300.0" prefWidth="200.0" vbarPolicy="ALWAYS">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="243.0" prefWidth="875.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="243.0"
+                                 prefWidth="875.0">
                                  <children>
-                                    <Pane layoutX="12.0" layoutY="12.0" prefHeight="103.0" prefWidth="863.0" style="-fx-background-color: #4F6F52;">
+                                    <Pane layoutX="12.0" layoutY="12.0" prefHeight="103.0"
+                                       prefWidth="863.0" style="-fx-background-color: #4F6F52;">
                                        <children>
-                                          <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="7.0"
+                                             pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../../../../../../22头像集合600x600.png" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="779.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="70.0" fitWidth="70.0"
+                                             layoutX="779.0" layoutY="17.0" pickOnBounds="true"
+                                             preserveRatio="true">
                                              <image>
                                                 <Image url="@../../../../../../file.png" />
                                              </image>
                                           </ImageView>
-                                          <VBox layoutX="90.0" layoutY="14.0" prefHeight="88.0" prefWidth="119.0">
+                                          <VBox layoutX="90.0" layoutY="14.0" prefHeight="88.0"
+                                             prefWidth="119.0">
                                              <children>
                                                 <Label text="Budiono Siregar" textFill="WHITE">
                                                    <font>
@@ -119,7 +138,8 @@
                                                    </font>
                                                 </Label>
                                                 <Label text="Apply as a Citizen" textFill="WHITE" />
-                                                <VBox alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="100.0">
+                                                <VBox alignment="BOTTOM_LEFT" prefHeight="50.0"
+                                                   prefWidth="100.0">
                                                    <children>
                                                       <Label text="2hr ago" textFill="WHITE" />
                                                    </children>
@@ -129,27 +149,34 @@
                                           <VBox prefHeight="200.0" prefWidth="100.0" />
                                        </children>
                                     </Pane>
-                                    <Pane layoutX="12.0" layoutY="139.0" prefHeight="103.0" prefWidth="863.0" style="-fx-background-color: #4F6F52;">
+                                    <Pane layoutX="12.0" layoutY="139.0" prefHeight="103.0"
+                                       prefWidth="863.0" style="-fx-background-color: #4F6F52;">
                                        <children>
-                                          <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="7.0"
+                                             pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../../../../../../777头像集合600x600.png" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="778.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="70.0" fitWidth="70.0"
+                                             layoutX="778.0" layoutY="20.0" pickOnBounds="true"
+                                             preserveRatio="true">
                                              <image>
                                                 <Image url="@../../../../../../file.png" />
                                              </image>
                                           </ImageView>
-                                          <VBox layoutX="90.0" layoutY="11.0" prefHeight="88.0" prefWidth="141.0">
+                                          <VBox layoutX="90.0" layoutY="11.0" prefHeight="88.0"
+                                             prefWidth="141.0">
                                              <children>
                                                 <Label text="Sutoyo Marjoko" textFill="WHITE">
                                                    <font>
                                                       <Font size="15.0" />
                                                    </font>
                                                 </Label>
-                                                <Label text="Apply as a Head District" textFill="WHITE" />
-                                                <VBox alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="100.0">
+                                                <Label text="Apply as a Head District"
+                                                   textFill="WHITE" />
+                                                <VBox alignment="BOTTOM_LEFT" prefHeight="50.0"
+                                                   prefWidth="100.0">
                                                    <children>
                                                       <Label text="1hr ago" textFill="WHITE" />
                                                    </children>
@@ -160,39 +187,50 @@
                                     </Pane>
                                  </children>
                               </AnchorPane>
-                          </content>
+                           </content>
                         </ScrollPane>
                      </children>
                   </VBox>
                   <VBox layoutX="10.0" layoutY="10.0" prefHeight="260.0" prefWidth="100.0">
                      <children>
                         <ScrollPane prefHeight="260.0" prefWidth="200.0" vbarPolicy="ALWAYS">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0"
+                                 prefWidth="200.0">
                                  <children>
                                     <AnchorPane prefHeight="252.0" prefWidth="867.0">
                                        <children>
-                                          <Pane layoutX="14.0" layoutY="14.0" prefHeight="103.0" prefWidth="863.0" style="-fx-background-color: #4F6F52;">
+                                          <Pane layoutX="14.0" layoutY="14.0" prefHeight="103.0"
+                                             prefWidth="863.0"
+                                             style="-fx-background-color: #4F6F52;">
                                              <children>
-                                                <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fitHeight="90.0" fitWidth="90.0"
+                                                   layoutY="7.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                                    <image>
-                                                      <Image url="@../../../../../../88头像集合600x600.png" />
+                                                      <Image
+                                                         url="@../../../../../../88头像集合600x600.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="779.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fitHeight="70.0" fitWidth="70.0"
+                                                   layoutX="779.0" layoutY="17.0"
+                                                   pickOnBounds="true" preserveRatio="true">
                                                    <image>
                                                       <Image url="@../../../../../../file.png" />
                                                    </image>
                                                 </ImageView>
-                                                <VBox layoutX="90.0" layoutY="8.0" prefHeight="88.0" prefWidth="119.0">
+                                                <VBox layoutX="90.0" layoutY="8.0" prefHeight="88.0"
+                                                   prefWidth="119.0">
                                                    <children>
                                                       <Label text="Michael Adhip" textFill="WHITE">
                                                          <font>
                                                             <Font size="15.0" />
                                                          </font>
                                                       </Label>
-                                                      <Label text="Apply as a Citizen" textFill="WHITE" />
-                                                      <VBox alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="100.0">
+                                                      <Label text="Apply as a Citizen"
+                                                         textFill="WHITE" />
+                                                      <VBox alignment="BOTTOM_LEFT"
+                                                         prefHeight="50.0" prefWidth="100.0">
                                                          <children>
                                                             <Label text="25min ago" textFill="WHITE" />
                                                          </children>
@@ -201,27 +239,37 @@
                                                 </VBox>
                                              </children>
                                           </Pane>
-                                          <Pane layoutX="14.0" layoutY="134.0" prefHeight="103.0" prefWidth="863.0" style="-fx-background-color: #4F6F52;">
+                                          <Pane layoutX="14.0" layoutY="134.0" prefHeight="103.0"
+                                             prefWidth="863.0"
+                                             style="-fx-background-color: #4F6F52;">
                                              <children>
-                                                <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fitHeight="90.0" fitWidth="90.0"
+                                                   layoutY="7.0" pickOnBounds="true"
+                                                   preserveRatio="true">
                                                    <image>
-                                                      <Image url="@../../../../../../77头像集合600x600.png" />
+                                                      <Image
+                                                         url="@../../../../../../77头像集合600x600.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="780.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fitHeight="70.0" fitWidth="70.0"
+                                                   layoutX="780.0" layoutY="14.0"
+                                                   pickOnBounds="true" preserveRatio="true">
                                                    <image>
                                                       <Image url="@../../../../../../file.png" />
                                                    </image>
                                                 </ImageView>
-                                                <VBox layoutX="90.0" layoutY="8.0" prefHeight="88.0" prefWidth="119.0">
+                                                <VBox layoutX="90.0" layoutY="8.0" prefHeight="88.0"
+                                                   prefWidth="119.0">
                                                    <children>
                                                       <Label text="Daphane" textFill="WHITE">
                                                          <font>
                                                             <Font size="15.0" />
                                                          </font>
                                                       </Label>
-                                                      <Label text="Apply as a Citizen" textFill="WHITE" />
-                                                      <VBox alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="100.0">
+                                                      <Label text="Apply as a Citizen"
+                                                         textFill="WHITE" />
+                                                      <VBox alignment="BOTTOM_LEFT"
+                                                         prefHeight="50.0" prefWidth="100.0">
                                                          <children>
                                                             <Label text="30min ago" textFill="WHITE" />
                                                          </children>
@@ -234,7 +282,7 @@
                                     </AnchorPane>
                                  </children>
                               </AnchorPane>
-                          </content>
+                           </content>
                         </ScrollPane>
                      </children>
                   </VBox>
