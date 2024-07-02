@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" style="-fx-background-color: #4F6F52;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LoginController">
+   <children>
+      <ImageView fitHeight="286.0" fitWidth="606.0" layoutX="697.0" layoutY="451.0">
+         <image>
+            <Image url="@../../../../../../4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="473.0" fitWidth="483.0">
+         <image>
+            <Image url="@../../../../../../01.png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="735.0" prefWidth="1300.0">
+         <center>
+            <AnchorPane prefHeight="335.0" prefWidth="711.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 15px;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="97.0" layoutY="14.0" prefHeight="46.0" prefWidth="390.0" text="Welcome To Go Masyarakat" wrapText="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="87.0" layoutY="60.0" text="We are excited to have your back.Log in now and access your " wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="79.0" layoutY="157.0" prefHeight="64.0" prefWidth="426.0">
+                     <children>
+                        <TextField prefHeight="44.0" prefWidth="426.0" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="262.0" layoutY="82.0" text="account. ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="81.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username or Email" wrappingWidth="111.73668670654297" />
+                  <PasswordField layoutX="80.0" layoutY="230.0" prefHeight="44.0" prefWidth="426.0" promptText="Password" />
+                  <CheckBox layoutX="78.0" layoutY="288.0" mnemonicParsing="false" text="Remember me">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Hyperlink layoutX="376.0" layoutY="286.0" text="Forgot your password?" />
+                  <Button layoutX="80.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="424.0" style="-fx-background-color: #1F6139; -fx-background-color: #31857B; -fx-background-color: #559E5C;" text="Log In" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutX="79.0" layoutY="433.0" prefHeight="3.0" prefWidth="190.0" style="-fx-background-color: #000000;" />
+                  <Separator layoutX="313.0" layoutY="433.0" prefHeight="2.0" prefWidth="191.0" style="-fx-background-color: #000000;" />
+                  <Label layoutX="285.0" layoutY="425.0" text="or">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="78.0" layoutY="463.0" prefHeight="56.0" prefWidth="424.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: transparents; -fx-border-color: #ffffff;">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Social%20icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: transparents; -fx-border-color: #ffffff;">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../../../../../Social%20icon%20(4).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: transparents; -fx-border-color: #ffffff;">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Social%20icon%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Hyperlink layoutX="399.0" layoutY="386.0" onAction="#goToRegister" text="Create an account." />
+               </children>
+            </AnchorPane>
+         </center>
+         <left>
+            <AnchorPane prefHeight="577.0" prefWidth="357.0" BorderPane.alignment="CENTER" />
+         </left>
+         <top>
+            <AnchorPane prefHeight="79.0" prefWidth="1300.0" BorderPane.alignment="CENTER" />
+         </top>
+         <right>
+            <AnchorPane prefHeight="577.0" prefWidth="357.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="79.0" prefWidth="1300.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RegisterController">
+
+   <children>
+      <BorderPane prefHeight="735.0" prefWidth="1300.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="735.0" prefWidth="431.0" style="-fx-background-color: #4F6F52;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Create an account" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+                     <children>
+                        <Hyperlink text="Citizen" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Hyperlink>
+                        <Hyperlink layoutX="263.0" layoutY="10.0" text="Goverment" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Hyperlink>
+                        <Hyperlink layoutX="310.0" layoutY="10.0" text="Head District" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="394.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <VBox maxWidth="-Infinity" prefHeight="75.0" prefWidth="385.0">
+                           <children>
+                              <Label text="Full Name" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="75.0" prefWidth="385.0">
+                           <children>
+                              <Label text="Email" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="85.0" maxWidth="-Infinity" prefHeight="75.0" prefWidth="385.0">
+                           <children>
+                              <Label text="Password" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="154.0" maxWidth="-Infinity" prefHeight="75.0" prefWidth="385.0">
+                           <children>
+                              <Label text="Confirm Password" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="262.0" maxWidth="-Infinity" prefHeight="77.0" prefWidth="386.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="366.0" style="-fx-background-color: #1F6139; -fx-background-color: #31857B; -fx-background-color: #559E5C;" text="Register" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="366.0">
+                                 <children>
+                                    <Hyperlink onAction="#goToLogin" text="Log in.">
+                                       <graphic>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account?" />
+                                       </graphic>
+                                    </Hyperlink>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox maxWidth="-Infinity" prefHeight="77.0" prefWidth="386.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="371.0">
+                                 <children>
+                                    <Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: transparets; -fx-border-color: #ffffff;">
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../../Social%20icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: transparents; -fx-border-color: #ffffff;">
+                                       <graphic>
+                                          <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../../Social%20icon%20(4).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button contentDisplay="GRAPHIC_ONLY" layoutX="66.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: transparents; -fx-border-color: #ffffff;">
+                                       <graphic>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../../Social%20icon%20(2).png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="735.0" prefWidth="802.0" style="-fx-background-color: #4F6F52;" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <ImageView fitHeight="736.0" fitWidth="869.0" nodeOrientation="INHERIT">
+                     <image>
+                        <Image url="@../../../../../../04.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
