@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LihatLaporan">
    <children>
       <BorderPane layoutX="387.0" layoutY="178.0" prefHeight="1024.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -25,7 +24,7 @@
                         <Button layoutX="22.0" layoutY="192.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="219.0" text="Homepage" />
                         <Button layoutX="22.0" layoutY="260.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="219.0" text="Laporan Masalah" />
                         <Button layoutX="22.0" layoutY="328.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="219.0" text="Umpan Balik" />
-                        <Button layoutX="22.0" layoutY="880.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="219.0" text="Keluar" />
+                        <Button layoutX="22.0" layoutY="640.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="219.0" text="Keluar" />
                      </children>
                   </AnchorPane>
                </children>
@@ -36,7 +35,7 @@
                <children>
                   <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label layoutX="471.0" layoutY="55.0" lineSpacing="10.0" prefHeight="78.0" prefWidth="408.0" text="Laporkan Masalahmu di Sini" textAlignment="JUSTIFY">
+                        <Label layoutX="345.0" layoutY="63.0" lineSpacing="10.0" prefHeight="78.0" prefWidth="408.0" text="Laporkan Masalahmu di Sini" textAlignment="JUSTIFY">
                            <font>
                               <Font size="25.0" />
                            </font>
