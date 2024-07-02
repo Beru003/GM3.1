@@ -40,9 +40,18 @@ public class RegisterController {
         // Replace with your actual registration logic
         System.out.println("Register with: " + fullName + ", " + email + ", " + password);
 
-        // Example: Go back to login after registration
+        // Example: Go to login after registration
         try {
-            App.setRoot("Login"); // Call App method to switch to Login.fxml
+            App.setRoot("Login");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void goToLogin() {
+        try {
+            App.setRoot("Login");
         } catch (IOException e) {
             e.printStackTrace();
         }

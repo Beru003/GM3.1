@@ -31,10 +31,17 @@ public class LoginController {
 
         // Replace with your actual login logic
         System.out.println("Login with: " + username + ", " + password);
+
+        // Example: Navigate to Main after successful login
+        try {
+            App.setRoot("Main");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void goToRegister() throws IOException {
-        App.setRoot("Register"); // Call App method to switch to Register.fxml
+        App.setRoot("Register");
     }
 }
