@@ -1,3 +1,19 @@
 .primary-color{
     -fx-background-color: #49796B;
 }
+
+.nav-bar {
+    -fx-background-color: #F5EFE6;
+    -fx-background-radius: 0 24px 24px 0;
+}
+
+.select-btn {
+    -fx-background-color: #49796B;
+    -fx-background-text: white; 
+    -fx-background-radius: 10px;
+}
+
+.btn-navbar {
+    -fx-background-color: #F5EFE6;
+    -fx-background-radius: 10px;
+}
