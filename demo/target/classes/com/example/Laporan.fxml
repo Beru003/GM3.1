@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" styleClass="primary-color" stylesheets="@../../../../../Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LihatLaporan">
+   <children>
+      <BorderPane layoutX="387.0" layoutY="178.0" prefHeight="1024.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="1024.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="105.0" fitWidth="109.0" layoutX="73.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../logo%20gom.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="13.0" layoutY="175.0" prefHeight="210.0" prefWidth="230.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="230.0" spacing="20.0">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../mai%20proyek/home.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="HOME" textFill="#1a4d2e">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0" styleClass="select-btn" stylesheets="@../../../../../Style.css">
+                                 <children>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../mai%20proyek/pencil.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="LAPORKAN" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="48.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0">
+                                 <children>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../mai%20proyek/feedb.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="FEEDBACK" textFill="#1a4d2e">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" layoutX="13.0" layoutY="660.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../mai%20proyek/octicon_sign-out-16.png" />
+                                 </image>
+                              </ImageView>
+                              <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="KELUAR" textFill="#1a4d2e">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
