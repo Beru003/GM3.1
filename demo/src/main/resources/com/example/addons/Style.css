@@ -9,13 +9,14 @@
 
 .select-btn {
     -fx-background-color: #49796B;
-    -fx-background-text: white; 
+    -fx-text-fill: white;
     -fx-background-radius: 10px;
 }
 
 .btn-navbar {
     -fx-background-color: #F5EFE6;
     -fx-background-radius: 10px;
+    -fx-text-fill: #49796B;
 }
 
 .field-text {
