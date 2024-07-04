@@ -54,13 +54,13 @@
                   </Label>
                   <Text layoutX="81.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username or Email" wrappingWidth="111.73668670654297" />
                   <PasswordField fx:id="passwordField" layoutX="80.0" layoutY="230.0" prefHeight="44.0" prefWidth="426.0" promptText="Password" />
-                  <CheckBox layoutX="78.0" layoutY="288.0" mnemonicParsing="false" text="Remember me">
+                  <CheckBox fx:id="rememberMeCheckBox" layoutX="78.0" layoutY="288.0" mnemonicParsing="false" text="Remember me">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </CheckBox>
                   <Hyperlink layoutX="376.0" layoutY="286.0" text="Forgot your password?" />
-                  <Button layoutX="80.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleLoginAction" prefHeight="44.0" prefWidth="424.0" style="-fx-background-color: #1F6139; -fx-background-color: #31857B; -fx-background-color: #559E5C;" text="Log In" textFill="WHITE">
+                  <Button fx:id="loginButton" layoutX="80.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleLoginAction" prefHeight="44.0" prefWidth="424.0" style="-fx-background-color: #1F6139; -fx-background-color: #31857B; -fx-background-color: #559E5C;" text="Log In" textFill="WHITE">
                      <font>
                         <Font size="19.0" />
                      </font>
