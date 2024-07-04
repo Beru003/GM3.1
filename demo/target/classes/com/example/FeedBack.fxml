@@ -28,7 +28,7 @@
                                  <children>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/home.png" />
+                                          <Image url="@../../../../../../images/home.png" />
                                        </image>
                                     </ImageView>
                                     <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="HOME" textFill="#1a4d2e">
@@ -42,7 +42,7 @@
                                  <children>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/pencilijo.png" />
+                                          <Image url="@../../../../../../images/pencilijo.png" />
                                        </image>
                                     </ImageView>
                                     <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="LAPORKAN" textFill="#1a4d2e">
@@ -56,7 +56,7 @@
                                  <children>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/febputih.png" />
+                                          <Image url="@../../../../../../images/febputih.png" />
                                        </image>
                                     </ImageView>
                                     <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="FEEDBACK" textFill="WHITE">
@@ -72,7 +72,7 @@
                            <children>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../../../mai%20proyek/octicon_sign-out-16.png" />
+                                    <Image url="@../../../../../../images/octicon_sign-out-16.png" />
                                  </image>
                               </ImageView>
                               <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="KELUAR" textFill="#1a4d2e">

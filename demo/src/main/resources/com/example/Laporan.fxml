@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -18,12 +19,7 @@
                <children>
                   <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <ImageView fitHeight="105.0" fitWidth="109.0" layoutX="73.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../../../../../../logo%20gom.png" />
-                           </image>
-                        </ImageView>
-                        <VBox layoutX="13.0" layoutY="175.0" prefHeight="210.0" prefWidth="230.0">
+                        <VBox layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
                            <children>
                               <HBox alignment="CENTER" prefHeight="45.0" prefWidth="230.0" spacing="20.0">
                                  <children>
@@ -83,6 +79,11 @@
                               </Label>
                            </children>
                         </HBox>
+                        <ImageView fitHeight="96.0" fitWidth="126.0" layoutX="63.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../images/Group%206.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
                </children>
@@ -93,16 +94,37 @@
                <children>
                   <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <TextField layoutX="68.0" layoutY="185.0" prefHeight="49.0" prefWidth="339.0" promptText="Tulis judul lapor ...." styleClass="field-text" stylesheets="@../../../../../Style.css">
+                        <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="80.0" prefHeight="106.0" prefWidth="535.0" AnchorPane.bottomAnchor="629.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="476.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="587.0" text="Selamat Datang! Lapor Cepat, Tanggap Tepat." textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="62.0" fitWidth="68.0" layoutX="969.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../images/88头像集合600x600.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="832.0" layoutY="39.0" prefHeight="29.0" prefWidth="133.0" text="Rayyanza Abe" textFill="WHITE">
                            <font>
-                              <Font size="15.0" />
+                              <Font size="20.0" />
                            </font>
-                        </TextField>
-                        <Label layoutX="74.0" layoutY="152.0" prefHeight="17.0" prefWidth="58.0" text="JUDUL" textFill="WHITE">
+                        </Label>
+                        <Label layoutX="39.0" layoutY="108.0" prefHeight="17.0" prefWidth="91.0" text="JUDUL" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
+                        <TextField layoutX="38.0" layoutY="145.0" prefHeight="40.0" prefWidth="285.0" />
+                        <Label layoutX="409.0" layoutY="107.0" prefHeight="17.0" prefWidth="91.0" text="JUDUL" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="410.0" layoutY="144.0" minHeight="40.0" prefHeight="40.0" prefWidth="273.0" />
                      </children></AnchorPane>
                </children>
             </AnchorPane>
