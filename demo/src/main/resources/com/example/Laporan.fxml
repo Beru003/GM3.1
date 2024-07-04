@@ -17,7 +17,7 @@
          <left>
             <AnchorPane prefHeight="1024.0" prefWidth="275.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <VBox layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
                            <children>

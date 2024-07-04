@@ -150,7 +150,7 @@
                                        <graphic>
                                           <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../Social%20icon.png" />
+                                                <Image url="@addons/pngs/Social%20icon.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -159,7 +159,7 @@
                                        <graphic>
                                           <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../Social%20icon%20(4).png" />
+                                                <Image url="@addons/pngs/Social%20icon%20(4).png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -168,7 +168,7 @@
                                        <graphic>
                                           <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../../../../Social%20icon%20(2).png" />
+                                                <Image url="@addons/pngs/Social%20icon%20(2).png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -187,7 +187,7 @@
                <children>
                   <ImageView fitHeight="736.0" fitWidth="869.0" nodeOrientation="INHERIT">
                      <image>
-                        <Image url="@../../../../../../04.png" />
+                        <Image url="@addons/pngs/04.png" />
                      </image>
                   </ImageView>
                </children>
