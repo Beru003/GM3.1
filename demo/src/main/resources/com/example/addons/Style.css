@@ -11,12 +11,14 @@
     -fx-background-color: #49796B;
     -fx-text-fill: white;
     -fx-background-radius: 10px;
+    -fx-font-weight: bold;
 }
 
 .btn-navbar {
     -fx-background-color: #F5EFE6;
     -fx-background-radius: 10px;
     -fx-text-fill: #49796B;
+    -fx-font-weight: bold;
 }
 
 .field-text {
