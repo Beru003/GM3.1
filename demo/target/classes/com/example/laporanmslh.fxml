@@ -100,11 +100,11 @@
                            <content>
                               <VBox prefHeight="606.0" prefWidth="958.0">
                                  <children>
-                                    <TableView prefHeight="371.0" prefWidth="958.0">
+                                    <TableView fx:id="tableView" prefHeight="371.0" prefWidth="958.0">
                                       <columns>
-                                        <TableColumn prefWidth="44.79995650053024" text="No" />
-                                        <TableColumn prefWidth="460.0" text="Deskripsi" />
-                                          <TableColumn prefWidth="460.0" text="Lokasi" />
+                                        <TableColumn fx:id="columnNo" prefWidth="44.79995650053024" text="No" />
+                                        <TableColumn fx:id="columnDeskripsi" prefWidth="460.0" text="Deskripsi" />
+                                          <TableColumn fx:id="columnLokasi" prefWidth="460.0" text="Lokasi" />
                                       </columns>
                                     </TableView>
                                     <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
@@ -136,5 +136,3 @@
       </BorderPane>
    </children>
 </AnchorPane>
-
-

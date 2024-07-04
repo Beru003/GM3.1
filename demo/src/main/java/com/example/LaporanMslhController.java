@@ -37,7 +37,7 @@ public class LaporanMslhController {
     private void loadCSVData() {
         String csvFile = "data.csv"; // Adjust the path to your CSV file
         String line;
-        String csvSplitBy = ",";
+        String csvSplitBy = "|";
 
         ObservableList<Item> data = FXCollections.observableArrayList();
 
