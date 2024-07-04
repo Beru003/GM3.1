@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -15,55 +15,55 @@
          <left>
             <AnchorPane prefHeight="1024.0" prefWidth="275.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <ImageView fitHeight="105.0" fitWidth="109.0" layoutX="73.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../../../logo%20gom.png" />
+                              <Image url="@addons/pngs/Group%205.png" />
                            </image>
                         </ImageView>
                         <VBox layoutX="13.0" layoutY="175.0" prefHeight="210.0" prefWidth="230.0">
                            <children>
-                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="230.0" spacing="20.0" styleClass="select-btn" stylesheets="@../../../../../Style.css">
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="230.0" spacing="20.0" styleClass="select-btn" stylesheets="@addons/Style.css">
                                  <children>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/rumahputih.png" />
+                                          <Image url="@addons/pngs/rumahputih.png" />
                                        </image>
                                     </ImageView>
-                                    <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="HOME" textFill="WHITE">
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="HOME" textFill="WHITE">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
-                                    </Label>
+                                    </Button>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0" styleClass="btn-navbar" stylesheets="@../../../../../Style.css">
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0" styleClass="btn-navbar" stylesheets="@addons/Style.css">
                                  <children>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/pencilijo.png" />
+                                          <Image url="@addons/pngs/pencilijo.png" />
                                        </image>
                                     </ImageView>
-                                    <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="LAPORKAN" textFill="#1a4d2e">
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="LAPORKAN">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
-                                    </Label>
+                                    </Button>
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER" layoutX="10.0" layoutY="48.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0">
                                  <children>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/feedb.png" />
+                                          <Image url="@addons/pngs/feedb.png" />
                                        </image>
                                     </ImageView>
-                                    <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="FEEDBACK" textFill="#1a4d2e">
+                                    <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="FEEDBACK">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
-                                    </Label>
+                                    </Button>
                                  </children>
                               </HBox>
                            </children>
@@ -72,14 +72,14 @@
                            <children>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../../../mai%20proyek/octicon_sign-out-16.png" />
+                                    <Image url="@addons/pngs/octicon_sign-out-16.png" />
                                  </image>
                               </ImageView>
-                              <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="KELUAR" textFill="#1a4d2e">
+                              <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="KELUAR">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
-                              </Label>
+                              </Button>
                            </children>
                         </HBox>
                      </children>
@@ -90,7 +90,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                </children>
             </AnchorPane>
          </center>

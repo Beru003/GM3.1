@@ -1,9 +1,15 @@
 package com.example;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -18,6 +24,12 @@ public class LoginController {
 
     @FXML
     private PasswordField passwordField;
+
+    @FXML
+    private CheckBox rememberMeCheckBox;
+
+    @FXML
+    private Button loginButton;
 
     @FXML
     private Hyperlink registerLink;
@@ -38,9 +50,13 @@ public class LoginController {
 
         // Authenticate user
         if (authenticateUser(username, password)) {
-            // Example: Navigate to Main after successful login
+            // Example: Navigate to Homepage after successful login
             try {
-                App.setRoot("Main");
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/homepage.fxml"));
+                Parent root = loader.load();
+                Stage stage = (Stage) loginButton.getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.show();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -51,8 +67,17 @@ public class LoginController {
     }
 
     @FXML
-    private void goToRegister() throws IOException {
-        App.setRoot("Register");
+    private void goToRegister() {
+        // Navigate to Register screen
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/register.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) registerLink.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private List<User> loadUsersFromCSV(String filePath) {
