@@ -17,3 +17,14 @@
     -fx-background-color: #F5EFE6;
     -fx-background-radius: 10px;
 }
+
+.field-text {
+    -fx-background-color: #55897A;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+}
+
+.top-report {
+    -fx-background-color: #F5EFE6;
+    -fx-background-radius: 0 0px 24px 24px;
+}
