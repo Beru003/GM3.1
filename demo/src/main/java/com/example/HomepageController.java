@@ -3,6 +3,7 @@ package com.example;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -33,8 +34,23 @@ public class HomepageController {
     private HBox keluarButton;
 
     @FXML
+    private Button homeBtn;
+
+    @FXML
+    private Button laporkanBtn;
+
+    @FXML
+    private Button feedbackBtn;
+
+    @FXML
+    private Button keluarBtn;
+
+    @FXML
     private void initialize() {
-        // Initialization code if needed
+        homeBtn.setOnAction(event -> handleHomeButtonAction());
+        laporkanBtn.setOnAction(event -> handleLaporkanButtonAction());
+        feedbackBtn.setOnAction(event -> handleFeedbackButtonAction());
+        keluarBtn.setOnAction(event -> handleKeluarButtonAction());
     }
 
     @FXML
