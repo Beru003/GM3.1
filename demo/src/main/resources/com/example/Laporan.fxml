@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -28,7 +29,7 @@
                                  <children>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/home.png" />
+                                          <Image url="@../../../../../../images/home.png" />
                                        </image>
                                     </ImageView>
                                     <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="HOME" textFill="#1a4d2e">
@@ -42,7 +43,7 @@
                                  <children>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/pencil.png" />
+                                          <Image url="@../../../../../../images/pencilputih.png" />
                                        </image>
                                     </ImageView>
                                     <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="LAPORKAN" textFill="WHITE">
@@ -56,7 +57,7 @@
                                  <children>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../mai%20proyek/feedb.png" />
+                                          <Image url="@../../../../../../images/feedb.png" />
                                        </image>
                                     </ImageView>
                                     <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="FEEDBACK" textFill="#1a4d2e">
@@ -72,7 +73,7 @@
                            <children>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../../../mai%20proyek/octicon_sign-out-16.png" />
+                                    <Image url="@../../../../../../images/octicon_sign-out-16.png" />
                                  </image>
                               </ImageView>
                               <Label lineSpacing="5.0" prefHeight="28.0" prefWidth="135.0" text="KELUAR" textFill="#1a4d2e">
@@ -90,7 +91,19 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextField layoutX="68.0" layoutY="185.0" prefHeight="49.0" prefWidth="339.0" promptText="Tulis judul lapor ...." styleClass="field-text" stylesheets="@../../../../../Style.css">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="74.0" layoutY="152.0" prefHeight="17.0" prefWidth="58.0" text="JUDUL" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
                </children>
             </AnchorPane>
          </center>
