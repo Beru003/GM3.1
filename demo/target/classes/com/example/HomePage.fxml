@@ -35,7 +35,7 @@
                                     <Font size="15.0" />
                                  </font>
                               </Button>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="nav-bar" stylesheets="@addons/Style.css" text="LAPORKAN">
+                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="LAPORKAN">
                                  <graphic>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>

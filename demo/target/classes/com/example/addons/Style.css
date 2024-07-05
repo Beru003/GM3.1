@@ -1,0 +1,33 @@
+.primary-color{
+    -fx-background-color: #49796B;
+}
+
+.nav-bar {
+    -fx-background-color: #F5EFE6;
+    -fx-background-radius: 0 24px 24px 0;
+}
+
+.select-btn {
+    -fx-background-color: #49796B;
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+}
+
+.btn-navbar {
+    -fx-background-color: #F5EFE6;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #49796B;
+    -fx-font-weight: bold;
+}
+
+.field-text {
+    -fx-background-color: #55897A;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+}
+
+.top-navbar {
+    -fx-background-color: #406c60;
+    -fx-background-radius: 0 0 24px 24px;
+}
