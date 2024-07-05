@@ -1,37 +1,34 @@
 package com.example;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label; 
-import javafx.scene.control.TextField; 
-import javafx.scene.control.ComboBox;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ChoiceBox;
 
 public class LaporanController implements Initializable{
 
     @FXML
-    private AnchorPane Laporan;
+    private ResourceBundle resources;
 
     @FXML
-    private ComboBox<String> ComboList;
-    private String[] kategori = {"Pohon", "Jalan Rusak", "Kemacetan", "Kecelakaan", "Parkir Liar"};
+    private URL location;
+
+    @FXML
+    private ChoiceBox<String> myChoiceBox;
+    private String[] kategori = {"Pohon", "Jalan Rusak"};
+
+    @FXML
+    void initialize() {
+        assert myChoiceBox != null : "fx:id=\"myChoiceBox\" was not injected: check your FXML file 'Laporan.fxml'.";
+
+    }
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
-        ComboList.getItems().addAll(kategori);
+        myChoiceBox.getItems().addAll(kategori);
+        //throw new UnsupportedOperationException("Unimplemented method 'initialize'");
     }
-
-    /*public void getKategori(ActionEvent event) {
-        String kategori = ComboList.getValue();
-    } */
-
-    
-    
-
 
 }
 
