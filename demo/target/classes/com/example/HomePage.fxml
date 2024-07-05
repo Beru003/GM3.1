@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" styleClass="primary-color" stylesheets="@addons/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.HomePageController">
+<AnchorPane fx:id="HomePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" styleClass="primary-color" stylesheets="@addons/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.HomePageController">
    <children>
       <BorderPane layoutX="387.0" layoutY="178.0" prefHeight="1024.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -17,9 +17,9 @@
                <children>
                   <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <VBox layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
+                        <VBox fx:id="navBar" layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
                            <children>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="select-btn" stylesheets="@addons/Style.css" text="HOME">
+                              <Button fx:id="homeBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" prefHeight="40.0" prefWidth="230.0" styleClass="select-btn" stylesheets="@addons/Style.css" text="HOME">
                                  <graphic>
                                     <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -34,7 +34,7 @@
                                     <Font size="15.0" />
                                  </font>
                               </Button>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="LAPORKAN">
+                              <Button fx:id="laporkanBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleLaporkanButtonAction" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="LAPORKAN">
                                  <graphic>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -49,7 +49,7 @@
                                     <Font size="15.0" />
                                  </font>
                               </Button>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="FEEDBACK">
+                              <Button fx:id="feedbackBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleFeedbackButtonAction" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="FEEDBACK">
                                  <graphic>
                                     <ImageView fitHeight="22.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -66,12 +66,12 @@
                               </Button>
                            </children>
                         </VBox>
-                        <ImageView fitHeight="96.0" fitWidth="126.0" layoutX="63.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="logoImageView" fitHeight="96.0" fitWidth="126.0" layoutX="63.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../images/Group%206.png" />
                            </image>
                         </ImageView>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="640.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="KELUAR">
+                        <Button fx:id="keluarBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="640.0" mnemonicParsing="false" onAction="#handleKeluarButtonAction" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="KELUAR">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

@@ -12,7 +12,7 @@ import javafx.scene.Scene;
 
 import java.io.IOException;
 
-public class HomePageController {
+public class HomePagePemController {
 
     @FXML
     private ImageView logoImageView;
@@ -24,7 +24,7 @@ public class HomePageController {
     private HBox homeButton;
 
     @FXML
-    private HBox laporkanButton;
+    private HBox laporanButton;
 
     @FXML
     private HBox feedbackButton;
@@ -36,7 +36,7 @@ public class HomePageController {
     private Button homeBtn;
 
     @FXML
-    private Button laporkanBtn;
+    private Button laporanBtn;
 
     @FXML
     private Button feedbackBtn;
@@ -47,7 +47,7 @@ public class HomePageController {
     @FXML
     private void initialize() {
         homeBtn.setOnAction(event -> handleHomeButtonAction());
-        laporkanBtn.setOnAction(event -> handleLaporkanButtonAction());
+        laporanBtn.setOnAction(event -> handleLaporanButtonAction());
         feedbackBtn.setOnAction(event -> handleFeedbackButtonAction());
         keluarBtn.setOnAction(event -> handleKeluarButtonAction());
     }
@@ -59,9 +59,9 @@ public class HomePageController {
     }
 
     @FXML
-    private void handleLaporkanButtonAction() {
-        System.out.println("Laporkan button clicked");
-        loadPage("/com/example/Laporan.fxml");
+    private void handleLaporanButtonAction() {
+        System.out.println("Laporan button clicked");
+        loadPage("/com/example/laporanmslh.fxml");
     }
 
     @FXML

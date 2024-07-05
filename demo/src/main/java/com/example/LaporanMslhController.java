@@ -3,82 +3,194 @@ package com.example;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class LaporanMslhController {
 
     @FXML
-    private TableView<Item> tableView;
+    private TableView<Issue> tableView;
 
     @FXML
-    private TableColumn<Item, Integer> columnNo;
+    private TableColumn<Issue, String> columnNo;
 
     @FXML
-    private TableColumn<Item, String> columnDeskripsi;
+    private TableColumn<Issue, String> columnJudul;
 
     @FXML
-    private TableColumn<Item, String> columnLokasi;
+    private TableColumn<Issue, String> columnKategori;
+
+    @FXML
+    private TableColumn<Issue, String> columnFoto;
+
+    @FXML
+    private TableColumn<Issue, String> columnLokasi;
+
+    @FXML
+    private TableColumn<Issue, String> columnDeskripsi;
+
+    @FXML
+    private TableColumn<Issue, String> columnTanggal;
+
+    @FXML
+    private Button deleteButton;
+
+    private ObservableList<Issue> issueData = FXCollections.observableArrayList();
 
     @FXML
     public void initialize() {
         columnNo.setCellValueFactory(new PropertyValueFactory<>("no"));
-        columnDeskripsi.setCellValueFactory(new PropertyValueFactory<>("deskripsi"));
+        columnJudul.setCellValueFactory(new PropertyValueFactory<>("judul"));
+        columnKategori.setCellValueFactory(new PropertyValueFactory<>("kategori"));
+        columnFoto.setCellValueFactory(new PropertyValueFactory<>("foto"));
         columnLokasi.setCellValueFactory(new PropertyValueFactory<>("lokasi"));
+        columnDeskripsi.setCellValueFactory(new PropertyValueFactory<>("deskripsi"));
+        columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggal"));
 
         loadCSVData();
+        tableView.setItems(issueData);
+
+        deleteButton.setOnAction(event -> deleteSelectedIssue());
     }
 
     private void loadCSVData() {
-        String csvFile = "data.csv"; // Adjust the path to your CSV file
+        String csvFile = "data.csv";
         String line;
-        String csvSplitBy = "|";
-
-        ObservableList<Item> data = FXCollections.observableArrayList();
+        String csvSplitBy = ",";
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
-                String[] items = line.split(csvSplitBy);
-                if (items.length == 3) {
-                    Item item = new Item(Integer.parseInt(items[0]), items[1], items[2]);
-                    data.add(item);
-                }
+                String[] data = line.split(csvSplitBy);
+
+                Issue issue = new Issue(
+                        data[0],
+                        data[1],
+                        data[2],
+                        data[3],
+                        data[4],
+                        data[5],
+                        data[6]
+                );
+
+                issueData.add(issue);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        tableView.setItems(data);
     }
 
-    public static class Item {
-        private final Integer no;
-        private final String deskripsi;
-        private final String lokasi;
+    private void deleteSelectedIssue() {
+        Issue selectedIssue = tableView.getSelectionModel().getSelectedItem();
+        if (selectedIssue != null) {
+            issueData.remove(selectedIssue);
+            tableView.refresh();
+            saveAllDataToCSV();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("No Selection");
+            alert.setHeaderText("No Issue Selected");
+            alert.setContentText("Please select an issue in the table.");
+            alert.showAndWait();
+        }
+    }
 
-        public Item(Integer no, String deskripsi, String lokasi) {
+    private void saveAllDataToCSV() {
+        File file = new File("data.csv");
+
+        try (FileWriter writer = new FileWriter(file)) {
+            for (Issue issue : issueData) {
+                writer.append(issue.getNo()).append(",");
+                writer.append(issue.getJudul()).append(",");
+                writer.append(issue.getKategori()).append(",");
+                writer.append(issue.getFoto()).append(",");
+                writer.append(issue.getLokasi()).append(",");
+                writer.append(issue.getDeskripsi()).append(",");
+                writer.append(issue.getTanggal()).append("\n");
+            }
+
+            System.out.println("Data saved to data.csv");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static class Issue {
+        private String no;
+        private String judul;
+        private String kategori;
+        private String foto;
+        private String lokasi;
+        private String deskripsi;
+        private String tanggal;
+
+        public Issue(String no, String judul, String kategori, String foto, String lokasi, String deskripsi, String tanggal) {
             this.no = no;
-            this.deskripsi = deskripsi;
+            this.judul = judul;
+            this.kategori = kategori;
+            this.foto = foto;
             this.lokasi = lokasi;
+            this.deskripsi = deskripsi;
+            this.tanggal = tanggal;
         }
 
-        public Integer getNo() {
+        public String getNo() {
             return no;
+        }
+
+        public void setNo(String no) {
+            this.no = no;
+        }
+
+        public String getJudul() {
+            return judul;
+        }
+
+        public void setJudul(String judul) {
+            this.judul = judul;
+        }
+
+        public String getKategori() {
+            return kategori;
+        }
+
+        public void setKategori(String kategori) {
+            this.kategori = kategori;
+        }
+
+        public String getFoto() {
+            return foto;
+        }
+
+        public void setFoto(String foto) {
+            this.foto = foto;
+        }
+
+        public String getLokasi() {
+            return lokasi;
+        }
+
+        public void setLokasi(String lokasi) {
+            this.lokasi = lokasi;
         }
 
         public String getDeskripsi() {
             return deskripsi;
         }
 
-        public String getLokasi() {
-            return lokasi;
+        public void setDeskripsi(String deskripsi) {
+            this.deskripsi = deskripsi;
+        }
+
+        public String getTanggal() {
+            return tanggal;
+        }
+
+        public void setTanggal(String tanggal) {
+            this.tanggal = tanggal;
         }
     }
 }
-
-//tolong rename lihat laporan ya

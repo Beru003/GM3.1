@@ -50,9 +50,10 @@ public class LoginController {
 
         // Authenticate user
         if (authenticateUser(username, password)) {
-            // Example: Navigate to Homepage after successful login
+            // Navigate to the appropriate homepage based on username
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/homepage.fxml"));
+                String fxmlFile = username.endsWith(".pem") ? "/com/example/HomePagePem.fxml" : "/com/example/HomePage.fxml";
+                FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
                 Parent root = loader.load();
                 Stage stage = (Stage) loginButton.getScene().getWindow();
                 stage.setScene(new Scene(root));

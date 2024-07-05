@@ -23,7 +23,7 @@
                      <children>
                         <VBox layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
                            <children>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="HOME">
+                              <Button fx:id="homeBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="HOME">
                                  <graphic>
                                     <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -38,7 +38,7 @@
                                     <Font size="15.0" />
                                  </font>
                               </Button>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="select-btn" stylesheets="@addons/Style.css" text="LAPORKAN">
+                              <Button fx:id="laporkanBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="select-btn" stylesheets="@addons/Style.css" text="LAPORKAN">
                                  <graphic>
                                     <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -53,7 +53,7 @@
                                     <Font size="15.0" />
                                  </font>
                               </Button>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="FEEDBACK">
+                              <Button fx:id="feedbackBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="FEEDBACK">
                                  <graphic>
                                     <ImageView fitHeight="22.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -75,7 +75,7 @@
                               <Image url="@../../../../../../images/Group%206.png" />
                            </image>
                         </ImageView>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="640.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="KELUAR">
+                        <Button fx:id="keluarBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="640.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="KELUAR">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -100,11 +100,12 @@
                <children>
                   <DatePicker fx:id="tanggalDatePicker" layoutX="20.0" layoutY="20.0" prefWidth="150.0" />
                   <TextField fx:id="judulTextField" layoutX="20.0" layoutY="60.0" prefWidth="300.0" promptText="Judul" />
-                  <ComboBox fx:id="kategoriComboBox" layoutX="20.0" layoutY="100.0" onAction="#initialize" prefWidth="200.0" promptText="Pilih Kategori" />
+                  <ComboBox fx:id="kategoriComboBox" layoutX="20.0" layoutY="100.0" onAction="#initialize" prefWidth="200.0" promptText="Pilih Kategori" style="-fx-background-color: #ffffff;" />
                   <TextField fx:id="lokasiTextField" layoutX="20.0" layoutY="140.0" prefWidth="300.0" promptText="Lokasi" />
-                  <Button fx:id="pilihFileButton" layoutX="20.0" layoutY="180.0" text="Pilih File" />
+                  <Button fx:id="pilihFileButton" layoutX="20.0" layoutY="180.0" style="-fx-background-color: #ffffff;" text="Pilih File" />
                   <ImageView fx:id="fotoImageView" fitHeight="100.0" fitWidth="100.0" layoutX="20.0" layoutY="220.0" />
                   <TextArea fx:id="deskripsiTextArea" layoutX="20.0" layoutY="340.0" prefHeight="100.0" prefWidth="400.0" promptText="Deskripsi Laporan" />
+                  <Button fx:id="kirimBtn" layoutX="368.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleKirimButtonAction" style="-fx-background-color: #ffffff;" text="Kirim" />
                </children>
             </AnchorPane>
          </center>
