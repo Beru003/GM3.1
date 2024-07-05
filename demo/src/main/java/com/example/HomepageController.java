@@ -12,7 +12,7 @@ import javafx.scene.Scene;
 
 import java.io.IOException;
 
-public class HomePageController {
+public class HomepageController {
 
     @FXML
     private ImageView logoImageView;

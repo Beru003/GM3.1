@@ -22,7 +22,7 @@
 }
 
 .field-text {
-    -fx-background-color: #55897A;
+    -fx-background-color: #609a8a;
     -fx-background-radius: 10px;
     -fx-text-fill: white;
 }
@@ -30,5 +30,10 @@
 .top-navbar {
     -fx-background-color: #406c60;
     -fx-background-radius: 0 0 24px 24px;
+}
+
+.shape-box {
+    -fx-background-color: white;
+    -fx-background-radius: 10px 10px 10px 10px;
 }
 
