@@ -2,11 +2,14 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -95,21 +98,13 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                     <children>
-                        <HBox layoutX="38.0" prefHeight="55.0" prefWidth="1009.0" styleClass="top-navbar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="680.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <children>
-                              <ImageView fitHeight="46.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
-                                 <HBox.margin>
-                                    <Insets left="930.0" top="3.0" />
-                                 </HBox.margin>
-                                 <image>
-                                    <Image url="@addons/pngs/22头像集合600x600.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </HBox>
-                     </children></AnchorPane>
+                  <DatePicker fx:id="tanggalDatePicker" layoutX="20.0" layoutY="20.0" prefWidth="150.0" />
+                  <TextField fx:id="judulTextField" layoutX="20.0" layoutY="60.0" prefWidth="300.0" promptText="Judul" />
+                  <ComboBox fx:id="kategoriComboBox" layoutX="20.0" layoutY="100.0" onAction="#initialize" prefWidth="200.0" promptText="Pilih Kategori" />
+                  <TextField fx:id="lokasiTextField" layoutX="20.0" layoutY="140.0" prefWidth="300.0" promptText="Lokasi" />
+                  <Button fx:id="pilihFileButton" layoutX="20.0" layoutY="180.0" text="Pilih File" />
+                  <ImageView fx:id="fotoImageView" fitHeight="100.0" fitWidth="100.0" layoutX="20.0" layoutY="220.0" />
+                  <TextArea fx:id="deskripsiTextArea" layoutX="20.0" layoutY="340.0" prefHeight="100.0" prefWidth="400.0" promptText="Deskripsi Laporan" />
                </children>
             </AnchorPane>
          </center>

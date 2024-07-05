@@ -44,7 +44,14 @@ public class LaporanController {
 
     @FXML
     void initialize() {
-        kategoriComboBox.getItems().addAll("Jalan Rusak", "Pohon Tumbang", "Kemacetan", "Kecelakaan", "Banjir", "Lain-lain");
+        kategoriComboBox.getItems().addAll(
+            "Jalan Rusak", 
+            "Pohon Tumbang", 
+            "Kemacetan", 
+            "Kecelakaan", 
+            "Banjir", 
+            "Lain-lain"
+        );
 
         pilihFileButton.setOnAction(event -> {
             FileChooser fileChooser = new FileChooser();
