@@ -27,7 +27,7 @@
     -fx-text-fill: white;
 }
 
-.top-report {
-    -fx-background-color: #F5EFE6;
-    -fx-background-radius: 0 0px 24px 0px;
+.top-navbar {
+    -fx-background-color: #406c60;
+    -fx-background-radius: 0 0 24px 24px;
 }

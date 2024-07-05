@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,87 +21,75 @@
                <children>
                   <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <ImageView fitHeight="105.0" fitWidth="109.0" layoutX="73.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@addons/pngs/Group%205.png" />
-                           </image>
-                        </ImageView>
-                        <VBox layoutX="13.0" layoutY="175.0" prefHeight="210.0" prefWidth="230.0">
+                        <VBox layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
                            <children>
-                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="230.0" spacing="20.0" styleClass="select-btn" stylesheets="@addons/Style.css">
-                                 <children>
-                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="HOME">
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-<<<<<<< HEAD
-                                          <Image url="@../../../../../../images/rumahputih.png" />
-=======
-                                          <Image url="@addons/pngs/rumahputih.png" />
->>>>>>> 9582ad8fd450cdd9ea65a876b2fa47f7e231960a
+                                          <Image url="@addons/pngs/home.png" />
                                        </image>
                                     </ImageView>
-                                    <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="HOME" textFill="WHITE">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Button>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0" styleClass="btn-navbar" stylesheets="@addons/Style.css">
-                                 <children>
-                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-<<<<<<< HEAD
-                                          <Image url="@../../../../../../images/pencilijo.png" />
-=======
-                                          <Image url="@addons/pngs/pencilijo.png" />
->>>>>>> 9582ad8fd450cdd9ea65a876b2fa47f7e231960a
-                                       </image>
-                                    </ImageView>
-                                    <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="LAPORKAN">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Button>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER" layoutX="10.0" layoutY="48.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0">
-                                 <children>
-                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-<<<<<<< HEAD
-                                          <Image url="@../../../../../../images/feedb.png" />
-=======
-                                          <Image url="@addons/pngs/feedb.png" />
->>>>>>> 9582ad8fd450cdd9ea65a876b2fa47f7e231960a
-                                       </image>
-                                    </ImageView>
-                                    <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="FEEDBACK">
-                                       <font>
-                                          <Font name="System Bold" size="15.0" />
-                                       </font>
-                                    </Button>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </VBox>
-                        <HBox alignment="CENTER" layoutX="13.0" layoutY="660.0" prefHeight="45.0" prefWidth="230.0" spacing="20.0">
-                           <children>
-                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-<<<<<<< HEAD
-                                    <Image url="@../../../../../../images/octicon_sign-out-16.png" />
-=======
-                                    <Image url="@addons/pngs/octicon_sign-out-16.png" />
->>>>>>> 9582ad8fd450cdd9ea65a876b2fa47f7e231960a
-                                 </image>
-                              </ImageView>
-                              <Button mnemonicParsing="false" style="-fx-background-color: transparents;" text="KELUAR">
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="30.0" />
+                                 </padding>
                                  <font>
-                                    <Font name="System Bold" size="15.0" />
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="select-btn" stylesheets="@addons/Style.css" text="LAPORKAN">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@addons/pngs/pencilputih.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="30.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="FEEDBACK">
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@addons/pngs/feedb.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="30.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
                                  </font>
                               </Button>
                            </children>
-                        </HBox>
+                        </VBox>
+                        <ImageView fitHeight="96.0" fitWidth="126.0" layoutX="63.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../images/Group%206.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="640.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="KELUAR">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@addons/pngs/octicon_sign-out-16.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
                </children>
@@ -106,7 +98,46 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="80.0" prefHeight="86.0" prefWidth="535.0" AnchorPane.bottomAnchor="649.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="476.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="587.0" text="Selamat Datang! Lapor Cepat, Tanggap Tepat." textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="62.0" fitWidth="68.0" layoutX="969.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../images/88头像集合600x600.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="832.0" layoutY="39.0" prefHeight="29.0" prefWidth="133.0" text="Rayyanza Abe" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="124.0" prefHeight="17.0" prefWidth="91.0" text="JUDUL" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="38.0" layoutY="161.0" prefHeight="40.0" prefWidth="285.0" />
+                        <Label layoutX="390.0" layoutY="123.0" prefHeight="17.0" prefWidth="91.0" text="KATEGORI" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="391.0" layoutY="160.0" minHeight="40.0" prefHeight="40.0" prefWidth="273.0" promptText="Pilih kategori" />
+                        <Label layoutX="734.0" layoutY="123.0" prefHeight="17.0" prefWidth="91.0" text="LOKASI" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="733.0" layoutY="160.0" prefHeight="40.0" prefWidth="285.0" />
+                     </children></AnchorPane>
                </children>
             </AnchorPane>
          </center>

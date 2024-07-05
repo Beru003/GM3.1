@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -13,13 +14,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Laporan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" styleClass="primary-color" stylesheets="@addons/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" styleClass="primary-color" stylesheets="@addons/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LaporanController">
    <children>
       <BorderPane layoutX="387.0" layoutY="178.0" prefHeight="1024.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
             <AnchorPane prefHeight="1024.0" prefWidth="275.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane layoutY="-2.0" prefHeight="735.0" prefWidth="298.0" styleClass="nav-bar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="-2.0">
                      <children>
                         <VBox layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
                            <children>
@@ -100,43 +101,37 @@
                <children>
                   <AnchorPane layoutX="-22.0" layoutY="336.0" prefHeight="1024.0" prefWidth="1187.0" stylesheets="@../../../../../Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-22.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <HBox alignment="CENTER_LEFT" layoutX="36.0" layoutY="80.0" prefHeight="86.0" prefWidth="535.0" AnchorPane.bottomAnchor="649.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="476.0" AnchorPane.topAnchor="0.0">
+                        <HBox layoutX="38.0" prefHeight="55.0" prefWidth="1009.0" styleClass="top-navbar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="680.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Label prefHeight="40.0" prefWidth="587.0" text="Selamat Datang! Lapor Cepat, Tanggap Tepat." textFill="WHITE">
-                                 <font>
-                                    <Font name="System Bold" size="27.0" />
-                                 </font>
-                              </Label>
+                              <ImageView fitHeight="46.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="930.0" top="3.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@addons/pngs/22头像集合600x600.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </HBox>
-                        <ImageView fitHeight="62.0" fitWidth="68.0" layoutX="969.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../../../../images/88头像集合600x600.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="832.0" layoutY="39.0" prefHeight="29.0" prefWidth="133.0" text="Rayyanza Abe" textFill="WHITE">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
                         <Label layoutX="39.0" layoutY="124.0" prefHeight="17.0" prefWidth="91.0" text="JUDUL" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
                         <TextField layoutX="38.0" layoutY="161.0" prefHeight="40.0" prefWidth="285.0" styleClass="field-text" stylesheets="@addons/Style.css" />
-                        <Label layoutX="390.0" layoutY="123.0" prefHeight="17.0" prefWidth="91.0" text="KATEGORI" textFill="WHITE">
+                        <Label layoutX="388.0" layoutY="123.0" prefHeight="17.0" prefWidth="91.0" text="KATEGORI" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <ComboBox fx:id="ComboList" layoutX="391.0" layoutY="160.0" minHeight="40.0" prefHeight="40.0" prefWidth="273.0" promptText="Pilih kategori" styleClass="field-text" stylesheets="@addons/Style.css" />
                         <Label layoutX="734.0" layoutY="123.0" prefHeight="17.0" prefWidth="91.0" text="LOKASI" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
                         <TextField layoutX="733.0" layoutY="160.0" prefHeight="40.0" prefWidth="285.0" styleClass="field-text" stylesheets="@addons/Style.css" />
+                        <ChoiceBox layoutX="397.0" layoutY="571.0" prefHeight="40.0" prefWidth="285.0" styleClass="field-text" stylesheets="@addons/Style.css" />
+                        <ComboBox fx:id="comboBox" layoutX="388.0" layoutY="160.0" onAction="#Select" prefHeight="39.0" prefWidth="285.0" promptText="Pilih Kategori" styleClass="field-text" stylesheets="@addons/Style.css" />
                      </children></AnchorPane>
                </children>
             </AnchorPane>
