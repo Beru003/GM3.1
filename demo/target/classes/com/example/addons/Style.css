@@ -37,3 +37,16 @@
     -fx-background-radius: 10px 10px 10px 10px;
 }
 
+.background-pemerintah {
+    -fx-background-color: white;
+}
+
+
+/*untuk pemerintah*/
+.select-btn-pemerintah {
+    -fx-background-color: #e9e2d9;
+    -fx-background-radius: 10px;
+}
+.btn-navbar-pemerintah {
+    -fx-background-color: #F5EFE6;
+}

@@ -73,7 +73,7 @@
                         </VBox>
                         <ImageView fitHeight="96.0" fitWidth="126.0" layoutX="63.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../images/Group%206.png" />
+                              <Image url="@addons/pngs/Group%206.png" />
                            </image>
                         </ImageView>
                         <Button fx:id="keluarBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="640.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="btn-navbar" stylesheets="@addons/Style.css" text="KELUAR">

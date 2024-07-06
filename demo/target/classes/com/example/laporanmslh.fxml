@@ -9,88 +9,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" style="-fx-background-color: #4F6F52;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LaporanMslhController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" styleClass="primary-color" stylesheets="@addons/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LaporanMslhController">
    <children>
       <BorderPane prefHeight="735.0" prefWidth="1300.0">
-         <left>
-            <VBox prefHeight="735.0" prefWidth="284.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 15px;" BorderPane.alignment="CENTER">
-               <children>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <ImageView fitHeight="130.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@addons/pngs/Group%205.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="363.0" prefWidth="284.0" spacing="20.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="116.0" style="-fx-background-color: #38B543; -fx-background-radius: 15px;">
-                           <graphic>
-                              <ImageView>
-                                 <image>
-                                    <Image url="@addons/pngs/Group%201321316025.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </Button>
-                        <Button layoutX="80.0" layoutY="10.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="143.0" style="-fx-background-color: transparents;">
-                           <graphic>
-                              <ImageView>
-                                 <image>
-                                    <Image url="@addons/pngs/Group%201321316032.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Button>
-                        <Button layoutX="80.0" layoutY="81.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" style="-fx-background-color: transparents;">
-                           <graphic>
-                              <ImageView>
-                                 <image>
-                                    <Image url="@addons/pngs/Group%201321316033.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Button>
-                        <Button layoutX="80.0" layoutY="143.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="143.0" style="-fx-background-color: transparents;">
-                           <graphic>
-                              <ImageView>
-                                 <image>
-                                    <Image url="@addons/pngs/Group%201321316034.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <padding>
-                              <Insets left="20.0" right="20.0" />
-                           </padding>
-                        </Button>
-                     </children>
-                  </VBox>
-                  <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: transparents;">
-                           <graphic>
-                              <ImageView>
-                                 <image>
-                                    <Image url="@addons/pngs/arrow-thick-left.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Button>
-                     </children>
-                     <padding>
-                        <Insets bottom="10.0" left="15.0" />
-                     </padding>
-                  </VBox>
-               </children>
-            </VBox>
-         </left>
          <center>
             <VBox prefHeight="506.0" prefWidth="955.0" spacing="100.0" BorderPane.alignment="CENTER">
                <children>
@@ -137,6 +62,88 @@
                </BorderPane.margin>
             </VBox>
          </center>
+         <left>
+            <AnchorPane prefHeight="735.0" prefWidth="275.0" styleClass="nav-bar" stylesheets="@addons/Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="38.0" layoutY="19.0" prefHeight="148.0" prefWidth="275.0" AnchorPane.bottomAnchor="568.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="19.0">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="80.0" top="20.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@addons/pngs/Group%205.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="13.0" layoutY="174.0" prefHeight="260.0" prefWidth="247.0" AnchorPane.bottomAnchor="301.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="174.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" stylesheets="@addons/Style.css" text="VERIFIKASI">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@addons/pngs/verification.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="45.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="select-btn-pemerintah" stylesheets="@addons/Style.css" text="LAPORAN">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@addons/pngs/laporan.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="45.0" />
+                           </padding>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="78.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" text="DASHBOARD">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@addons/pngs/verification.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="45.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="619.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" text="DASHBOARD" textFill="#49796b">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@addons/pngs/octicon_sign-out-16.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
       </BorderPane>
    </children>
 </AnchorPane>
