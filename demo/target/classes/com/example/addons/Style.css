@@ -41,6 +41,12 @@
     -fx-background-color: white;
 }
 
+.field-diluartext {
+    -fx-background-color: #609a8a; /* Set background color */
+    -fx-text-fill: black; /* Set text color to white for readability */
+  }
+  
+
 
 /*untuk pemerintah*/
 .select-btn-pemerintah {

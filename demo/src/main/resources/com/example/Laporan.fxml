@@ -121,14 +121,14 @@
                               <TextField fx:id="judulTextField" prefHeight="36.0" prefWidth="278.0" promptText="Judul" style="-fx-background-color: #fffff;" styleClass="field-text" stylesheets="@addons/Style.css" />
                            </children>
                         </VBox>
-                        <VBox layoutX="44.0" layoutY="255.0" prefHeight="101.0" prefWidth="278.0" spacing="15.0">
+                        <VBox layoutX="44.0" layoutY="247.0" prefHeight="101.0" prefWidth="278.0" spacing="15.0">
                            <children>
                               <Label prefHeight="17.0" prefWidth="214.0" text="KATEGORI" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Label>
-                              <ComboBox fx:id="kategoriComboBox" editable="true" minHeight="36.0" onAction="#initialize" prefWidth="278.0" promptText="Pilih Kategori" style="-fx-background-color: #609a8a;" styleClass="field-text" stylesheets="@addons/Style.css" />
+                              <ComboBox fx:id="kategoriComboBox" editable="true" minHeight="36.0" onAction="#initialize" prefWidth="278.0" promptText="Pilih Kategori" style="-fx-background-color: #609a8a;" stylesheets="@addons/Style.css" />
                            </children>
                         </VBox>
                         <VBox layoutX="41.0" layoutY="129.0" prefHeight="101.0" prefWidth="278.0" spacing="15.0">
@@ -138,10 +138,10 @@
                                     <Font size="20.0" />
                                  </font>
                               </Label>
-                              <DatePicker fx:id="tanggalDatePicker" minHeight="36.0" prefWidth="278.0" promptText="Pilih Tanggal" style="-fx-background-color: #609a8a;" styleClass="field-text" stylesheets="@addons/Style.css" />
+                              <DatePicker fx:id="tanggalDatePicker" minHeight="36.0" prefWidth="278.0" promptText="Pilih Tanggal" style="-fx-background-color: #609a8a; -fx-background-radius: 10px;" styleClass="field-diluartext" stylesheets="@addons/Style.css" />
                            </children>
                         </VBox>
-                        <VBox layoutX="604.0" layoutY="255.0" prefHeight="101.0" prefWidth="278.0" spacing="15.0">
+                        <VBox layoutX="604.0" layoutY="247.0" prefHeight="101.0" prefWidth="278.0" spacing="15.0">
                            <children>
                               <Label prefHeight="17.0" prefWidth="214.0" text="LOKASI" textFill="WHITE">
                                  <font>
@@ -151,33 +151,56 @@
                               <TextField fx:id="lokasiTextField" minHeight="36.0" prefWidth="278.0" promptText="Lokasi" styleClass="field-text" stylesheets="@addons/Style.css" />
                            </children>
                         </VBox>
-                        <VBox layoutX="604.0" layoutY="390.0" prefHeight="202.0" prefWidth="278.0" spacing="15.0">
+                        <VBox layoutX="604.0" layoutY="382.0" prefHeight="231.0" prefWidth="278.0" spacing="15.0">
                            <children>
                               <Label prefHeight="17.0" prefWidth="214.0" text="DESKRIPSI" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Label>
-                              <TextArea fx:id="deskripsiTextArea" prefHeight="100.0" prefWidth="400.0" promptText="Deskripsi Laporan" styleClass="field-text" stylesheets="@addons/Style.css" />
+                              <TextArea fx:id="deskripsiTextArea" prefHeight="192.0" prefWidth="278.0" promptText="Tulis deskripsi kejadian" style="-fx-background-color: #609a8a;" />
                            </children>
                         </VBox>
-                        <VBox layoutX="46.0" layoutY="400.0" prefHeight="156.0" prefWidth="411.0" spacing="10.0">
+                        <VBox layoutX="44.0" layoutY="383.0" prefHeight="226.0" prefWidth="414.0" spacing="10.0">
                            <children>
-                              <Label prefHeight="17.0" prefWidth="214.0" text="FOTO" textFill="WHITE">
+                              <Label text="FOTO" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Label>
-                              <ImageView fitHeight="109.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label layoutX="10.0" layoutY="36.0" prefHeight="26.0" prefWidth="282.0" text="Select a file JPG, PNG or MP4, file size no more than 10MB" textFill="WHITE">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                              </Label>
-                              <Button fx:id="pilihFileButton" style="-fx-background-color: #ffffff;" text="Pilih File" />
+                              <AnchorPane prefHeight="140.0" prefWidth="326.0" styleClass="field-text" stylesheets="@addons/Style.css">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="170.0" prefWidth="368.0" spacing="10.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@addons/pngs/feather_upload-cloud.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Select a file or drag and drop here" textFill="WHITE">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="JPG, PNG or MP4, file size no more than 10MB" textFill="#d9d9d9">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="selectFileButton" mnemonicParsing="false" onAction="#handleSelectFileButtonAction" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: white; -fx-background-radius: 6;" text="SELECT FILE" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
                            </children>
                         </VBox>
-                        <Button fx:id="kirimBtn" layoutX="646.0" layoutY="668.0" mnemonicParsing="false" onAction="#handleKirimButtonAction" prefHeight="26.0" prefWidth="221.0" style="-fx-background-color: #ffffff;" text="Kirim" />
+                        <Button fx:id="kirimBtn" layoutX="52.0" layoutY="669.0" mnemonicParsing="false" onAction="#handleKirimButtonAction" prefHeight="47.0" prefWidth="825.0" style="-fx-background-color: #2A4E44; -fx-background-radius: 10px;" text="Kirim" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
                      </children>
                   </AnchorPane>
                </children>
