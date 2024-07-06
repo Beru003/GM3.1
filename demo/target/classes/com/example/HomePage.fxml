@@ -98,9 +98,14 @@
                <children>
                   <AnchorPane layoutX="199.0" layoutY="171.0" prefHeight="735.0" prefWidth="1025.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <ScrollPane layoutX="37.0" layoutY="103.0" prefHeight="234.0" prefWidth="1087.0">
+                        <ScrollPane layoutX="37.0" layoutY="103.0" prefHeight="275.0" prefWidth="1087.0">
                            <content>
                               <HBox prefHeight="207.0" prefWidth="1145.0" />
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane layoutX="38.0" layoutY="496.0" prefHeight="474.0" prefWidth="1083.0" vbarPolicy="ALWAYS">
+                           <content>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
                            </content>
                         </ScrollPane>
                      </children></AnchorPane>
