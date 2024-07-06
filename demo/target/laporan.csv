@@ -1,0 +1,6 @@
+nama_pengguna,no,judul,kategori,foto,lokasi,deskripsi,tanggal
+John Doe,1,Jalan Rusak di Jl. ABC,Jalan Rusak,/path/to/foto1.jpg,Jl. ABC,Deskripsi masalah di Jl. ABC,2024-07-06
+Jane Smith,2,Pohon Tumbang di Jl. XYZ,Pohon Tumbang,/path/to/foto2.jpg,Jl. XYZ,Deskripsi masalah di Jl. XYZ,2024-07-07
+Alice Johnson,3,Kemacetan di Jl. DEF,Kemacetan,/path/to/foto3.jpg,Jl. DEF,Deskripsi masalah di Jl. DEF,2024-07-08
+Bob Brown,4,Kecelakaan di Jl. GHI,Kecelakaan,/path/to/foto4.jpg,Jl. GHI,Deskripsi masalah di Jl. GHI,2024-07-09
+Charlie White,5,Banjir di Jl. JKL,Banjir,/path/to/foto5.jpg,Jl. JKL,Deskripsi masalah di Jl. JKL,2024-07-10
