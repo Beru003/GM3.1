@@ -88,7 +88,7 @@ public class LaporanController {
     @FXML
     private void handleHomeButtonAction() {
         System.out.println("Home button clicked");
-        // Add navigation logic if needed
+        loadPage("/com/example/HomePage.fxml");
     }
 
     @FXML
