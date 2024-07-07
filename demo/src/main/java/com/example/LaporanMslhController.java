@@ -39,6 +39,9 @@ public class LaporanMslhController {
     @FXML
     private Button deleteButton;
 
+    @FXML
+    private Button lanjutbButton;
+
     private ObservableList<Issue> issueData = FXCollections.observableArrayList();
 
     @FXML
