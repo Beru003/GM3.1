@@ -103,17 +103,17 @@
                         <Font size="30.0" />
                      </font>
                   </Label>
-                  <TableView layoutX="73.0" layoutY="226.0" prefHeight="56.0" prefWidth="249.0">
+                  <TableView layoutX="708.0" layoutY="239.0" prefHeight="58.0" prefWidth="349.0">
                     <columns>
                       <TableColumn prefWidth="75.0" text="JUDUL" />
                     </columns>
                   </TableView>
-                  <TableView layoutX="384.0" layoutY="225.0" prefHeight="56.0" prefWidth="251.0">
+                  <TableView layoutX="708.0" layoutY="325.0" prefHeight="57.0" prefWidth="348.0">
                      <columns>
                         <TableColumn prefWidth="75.0" text="KATEGORI" />
                      </columns>
                   </TableView>
-                  <TableView layoutX="708.0" layoutY="224.0" prefHeight="56.0" prefWidth="327.0">
+                  <TableView layoutX="708.0" layoutY="415.0" prefHeight="65.0" prefWidth="346.0">
                      <columns>
                         <TableColumn prefWidth="75.0" text="LOKASI" />
                      </columns>
@@ -132,6 +132,16 @@
                         </Label>
                      </children>
                   </HBox>
+                  <TableView layoutX="69.0" layoutY="238.0" prefHeight="447.0" prefWidth="445.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="FOTO" />
+                     </columns>
+                  </TableView>
+                  <TableView layoutX="708.0" layoutY="514.0" prefHeight="167.0" prefWidth="348.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="DESKRIPSI" />
+                     </columns>
+                  </TableView>
                </children>
             </AnchorPane>
          </center>
