@@ -48,7 +48,7 @@ public class LaporanController {
     private TextArea deskripsiTextArea;
 
     @FXML
-    private Button pilihFileButton;
+    private Button selectFileButton;
 
     @FXML
     private ImageView fotoImageView;
@@ -219,7 +219,7 @@ public class LaporanController {
             "Lain-lain"
         );
 
-        pilihFileButton.setOnAction(event -> {
+        selectFileButton.setOnAction(event -> {
             FileChooser fileChooser = new FileChooser();
             fileChooser.getExtensionFilters().addAll(
                     new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.jpeg", "*.gif"),

@@ -187,7 +187,7 @@
                                                 <Font size="10.0" />
                                              </font>
                                           </Label>
-                                          <Button fx:id="selectFileButton" mnemonicParsing="false" onAction="#handleSelectFileButtonAction" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: white; -fx-background-radius: 6;" text="SELECT FILE" />
+                                          <Button fx:id="selectFileButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: white; -fx-background-radius: 6;" text="SELECT FILE" />
                                        </children>
                                        <padding>
                                           <Insets bottom="20.0" />

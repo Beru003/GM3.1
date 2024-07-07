@@ -2,9 +2,15 @@ package com.example;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.List;
@@ -58,6 +64,43 @@ public class LaporanMslhController {
         tableView.setItems(issueData);
 
         deleteButton.setOnAction(event -> deleteSelectedIssue());
+    }
+
+    @FXML
+    void handledetail(ActionEvent event) {
+        TableView.TableViewSelectionModel selectionModel = tableView.getSelectionModel();
+        selectionModel.setSelectionMode(SelectionMode.SINGLE);
+        int i = selectionModel.getSelectedIndex();
+        String index = Integer.toString(i);
+        File file = new File("indexL.csv");
+
+        try (FileWriter writer = new FileWriter(file, true)) {
+            writer.append(index);
+          
+
+            System.out.println("Data appended to data.csv");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            loadPage("detail.fxml");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    private void loadPage(String fxmlFile) throws IOException {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            Parent root = loader.load();
+            Scene scene = new Scene (root);
+            Stage stage = new Stage();
+            stage.setScene(scene);    
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void loadCSVData() {

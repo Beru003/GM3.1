@@ -39,7 +39,7 @@
                                     <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
                                        <children>
                                           <Button fx:id="deleteButton" mnemonicParsing="false" text="Remove" />
-                                          <Button fx:id="lanjutbButton" mnemonicParsing="false" text="Lanjut">
+                                          <Button fx:id="lanjutbButton" mnemonicParsing="false" onAction="#handledetail" text="Lanjut">
                                              <VBox.margin>
                                                 <Insets top="5.0" />
                                              </VBox.margin>
