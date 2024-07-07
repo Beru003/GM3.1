@@ -24,7 +24,7 @@
 .field-text {
     -fx-background-color: #609a8a;
     -fx-background-radius: 10px;
-    -fx-text-fill: black;
+    -fx-text-fill: white;
 }
 
 .top-navbar {

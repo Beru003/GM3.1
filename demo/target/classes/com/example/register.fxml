@@ -22,7 +22,7 @@
          <left>
             <VBox alignment="TOP_CENTER" prefHeight="735.0" prefWidth="431.0" style="-fx-background-color: #4F6F52;" BorderPane.alignment="CENTER">
                <children>
-                  <Label prefHeight="105.0" prefWidth="388.0" text="Create an account" textFill="WHITE">
+                  <Label text="Create an account" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="48.0" />
                      </font>
@@ -30,16 +30,16 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
                   </Label>
-                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="431.0">
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
                      <children>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Go Masyarakat, please create an account." wrappingWidth="339.111328125">
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Go Masyarakat, please create an account.">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Text>
                      </children>
                   </HBox>
-                  <VBox prefHeight="549.0" prefWidth="431.0" spacing="10.0">
+                  <VBox prefHeight="394.0" prefWidth="600.0" spacing="10.0">
                      <children>
                         <VBox maxWidth="-Infinity" prefHeight="75.0" prefWidth="385.0">
                            <children>
@@ -48,7 +48,7 @@
                                     <Font name="System Bold Italic" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="fullNameField" style="-fx-background-radius: 5px;" />
+                              <TextField fx:id="fullNameField" />
                            </children>
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -61,7 +61,7 @@
                                     <Font name="System Bold Italic" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="emailField" style="-fx-background-radius: 5px;" />
+                              <TextField fx:id="emailField" />
                            </children>
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -74,7 +74,7 @@
                                     <Font name="System Bold Italic" size="18.0" />
                                  </font>
                               </Label>
-                              <PasswordField fx:id="passwordField" style="-fx-background-radius: 5px;" />
+                              <PasswordField fx:id="passwordField" />
                            </children>
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -87,7 +87,7 @@
                                     <Font name="System Bold Italic" size="18.0" />
                                  </font>
                               </Label>
-                              <PasswordField fx:id="confirmPasswordField" style="-fx-background-radius: 5px;" />
+                              <PasswordField fx:id="confirmPasswordField" />
                            </children>
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -98,7 +98,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                            <children>
-                              <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="366.0" style="-fx-background-color: #1F6139; -fx-background-color: #31857B; -fx-background-color: #559E5C; -fx-background-radius: 8px;" text="Register" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                              <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="366.0" style="-fx-background-color: #1F6139; -fx-background-color: #31857B; -fx-background-color: #559E5C;" text="Register" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
                                  <font>
                                     <Font name="System Bold" size="20.0" />
                                  </font>
@@ -124,7 +124,7 @@
                            <children>
                               <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="371.0">
                                  <children>
-                                    <Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: transparets; -fx-border-color: #ffffff; -fx-background-radius: 5px;">
+                                    <Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: transparets; -fx-border-color: #ffffff;">
                                        <graphic>
                                           <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
@@ -156,12 +156,6 @@
                            </children>
                         </VBox>
                      </children>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <padding>
-                        <Insets left="15.0" />
-                     </padding>
                   </VBox>
                </children>
             </VBox>
@@ -171,7 +165,7 @@
                <children>
                   <ImageView fitHeight="736.0" fitWidth="869.0" nodeOrientation="INHERIT">
                      <image>
-                        <Image url="@addons/pngs/Toronto.jpeg" />
+                        <Image url="@addons/pngs/04.png" />
                      </image>
                   </ImageView>
                </children>
