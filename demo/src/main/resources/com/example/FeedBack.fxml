@@ -3,7 +3,8 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -97,108 +98,40 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <VBox layoutX="20.0" layoutY="77.0" prefHeight="719.0" prefWidth="1065.0" spacing="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                  <Label layoutX="67.0" layoutY="58.0" text="Detail Laporan" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="73.0" layoutY="226.0" prefHeight="56.0" prefWidth="249.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="JUDUL" />
+                    </columns>
+                  </TableView>
+                  <TableView layoutX="384.0" layoutY="225.0" prefHeight="56.0" prefWidth="251.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="KATEGORI" />
+                     </columns>
+                  </TableView>
+                  <TableView layoutX="708.0" layoutY="224.0" prefHeight="56.0" prefWidth="327.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="LOKASI" />
+                     </columns>
+                  </TableView>
+                  <HBox alignment="CENTER_LEFT" layoutX="69.0" layoutY="114.0" prefHeight="100.0" prefWidth="378.0" spacing="20.0">
                      <children>
-                        <Label text="Detail Laporan">
+                        <Label text="STATUS:" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Sudah Ditangani" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <HBox prefWidth="1065.0" spacing="10.0">
-                           <children>
-                              <Label fx:id="judulLaporanLabel" />
-                           </children>
-                        </HBox>
-                        <HBox spacing="10.0">
-                           <children>
-                              <Label fx:id="lokasiLabel" />
-                              <HBox spacing="10.0">
-                                 <children>
-                                    <Label fx:id="kategoriLabel" />
-                                    <HBox spacing="80.0">
-                                       <children>
-                                          <Label fx:id="tanggalDilaporkanLabel" />
-                                          <Label text="Foto Laporan: " textFill="WHITE">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </Label>
-                                          <Label text="Judul Laporan: " textFill="WHITE">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </Label>
-                                          <Label text="Kategori: " textFill="WHITE">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </Label>
-                                          <Label text="Lokasi Kejadian: " textFill="WHITE">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </Label>
-                                          <Label text="Tanggal Dilaporkan: " textFill="WHITE">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </HBox>
-                           </children>
-                        </HBox>
-                        <HBox prefHeight="200.0" prefWidth="944.0" spacing="10.0">
-                           <children>
-                              <ImageView fx:id="fotoLaporanImageView" fitHeight="200.0" fitWidth="300.0" />
-                           </children>
-                        </HBox>
-                        <HBox spacing="10.0">
-                           <children>
-                              <Label text="Status: " textFill="WHITE">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font></Label>
-                              <Label fx:id="statusLabel" />
-                           </children>
-                        </HBox>
-                        <HBox prefWidth="964.0" spacing="10.0">
-                           <children>
-                              <Label text="Deskripsi: " textFill="WHITE">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font></Label>
-                              <TextArea fx:id="deskripsiTextArea" editable="false" prefColumnCount="50" prefRowCount="3" prefWidth="592.0" wrapText="true" />
-                           </children>
-                        </HBox>
-                        <HBox spacing="10.0">
-                           <children>
-                              <Label text="Tanggapan: " textFill="WHITE">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font></Label>
-                              <TextArea fx:id="tanggapanTextArea" editable="false" prefColumnCount="50" prefRowCount="3" wrapText="true" />
-                           </children>
-                        </HBox>
-                        <HBox prefWidth="958.0" spacing="10.0">
-                           <children>
-                              <Label text="Foto Tanggapan: " textFill="WHITE">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font></Label>
-                              <ImageView fx:id="fotoTanggapanImageView" fitHeight="200.0" fitWidth="300.0" />
-                           </children>
-                        </HBox>
-                        <HBox fx:id="feedbackSection" spacing="10.0" visible="false">
-                           <children>
-                              <Label text="Feedback: " />
-                              <TextArea fx:id="feedbackTextArea" prefColumnCount="50" prefRowCount="3" wrapText="true" />
-                              <Button onAction="#kirimFeedback" text="Kirim" />
-                           </children>
-                        </HBox>
                      </children>
-                  </VBox>
+                  </HBox>
                </children>
             </AnchorPane>
          </center>
