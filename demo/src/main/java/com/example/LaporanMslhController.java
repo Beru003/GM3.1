@@ -13,6 +13,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -72,10 +75,18 @@ public class LaporanMslhController {
         selectionModel.setSelectionMode(SelectionMode.SINGLE);
         int i = selectionModel.getSelectedIndex();
         String index = Integer.toString(i);
+        Path path = Paths.get("indexL.csv");
+        try {
+            Files.deleteIfExists(path);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        
         File file = new File("indexL.csv");
-
+        
         try (FileWriter writer = new FileWriter(file, true)) {
-            writer.append(index);
+            
+            writer.write(index);
           
 
             System.out.println("Data appended to data.csv");
