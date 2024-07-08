@@ -100,7 +100,7 @@ public class LaporanController {
     @FXML
     private void handleFeedbackButtonAction() {
         System.out.println("Feedback button clicked");
-        // Add navigation logic if needed
+        loadPage("/com/example/Feedback.fxml");
     }
 
     @FXML

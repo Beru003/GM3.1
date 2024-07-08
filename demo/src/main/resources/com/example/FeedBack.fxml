@@ -106,17 +106,17 @@
                   </Label>
                   <TableView layoutX="708.0" layoutY="169.0" prefHeight="58.0" prefWidth="349.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="JUDUL" />
+                      <TableColumn prefWidth="348.8000122070313" text="JUDUL" />
                     </columns>
                   </TableView>
                   <TableView layoutX="708.0" layoutY="258.0" prefHeight="57.0" prefWidth="348.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="KATEGORI" />
+                        <TableColumn prefWidth="347.20001220703125" text="KATEGORI" />
                      </columns>
                   </TableView>
                   <TableView layoutX="708.0" layoutY="347.0" prefHeight="76.0" prefWidth="346.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="LOKASI" />
+                        <TableColumn prefWidth="345.6000122070312" text="LOKASI" />
                      </columns>
                   </TableView>
                   <HBox alignment="CENTER_LEFT" layoutX="69.0" layoutY="80.0" prefHeight="100.0" prefWidth="378.0" spacing="20.0">
@@ -135,12 +135,12 @@
                   </HBox>
                   <TableView layoutX="69.0" layoutY="171.0" prefHeight="261.0" prefWidth="445.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="FOTO" />
+                        <TableColumn prefWidth="444.7999969482422" text="FOTO" />
                      </columns>
                   </TableView>
                   <TableView layoutX="708.0" layoutY="442.0" prefHeight="170.0" prefWidth="348.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="DESKRIPSI" />
+                        <TableColumn prefWidth="347.20001220703125" text="DESKRIPSI" />
                      </columns>
                   </TableView>
                   <HBox alignment="CENTER_LEFT" layoutX="705.0" layoutY="79.0" prefHeight="100.0" prefWidth="378.0" spacing="20.0">
@@ -159,7 +159,7 @@
                   </HBox>
                   <TableView layoutX="68.0" layoutY="458.0" prefHeight="178.0" prefWidth="445.0">
                      <columns>
-                        <TableColumn prefWidth="113.69827270507812" text="TANGGAPAN" />
+                        <TableColumn prefWidth="444.7999969482422" text="TANGGAPAN" />
                      </columns>
                   </TableView>
                   <VBox layoutX="74.0" layoutY="676.0" prefHeight="288.0" prefWidth="984.0" spacing="10.0">
