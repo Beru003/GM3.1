@@ -27,9 +27,6 @@ public class HomePagePemController {
     private HBox laporanButton;
 
     @FXML
-    private HBox feedbackButton;
-
-    @FXML
     private HBox keluarButton;
 
     @FXML
@@ -48,14 +45,13 @@ public class HomePagePemController {
     private void initialize() {
         homeBtn.setOnAction(event -> handleHomeButtonAction());
         laporanBtn.setOnAction(event -> handleLaporanButtonAction());
-        feedbackBtn.setOnAction(event -> handleFeedbackButtonAction());
         keluarBtn.setOnAction(event -> handleKeluarButtonAction());
     }
 
     @FXML
     private void handleHomeButtonAction() {
         System.out.println("Home button clicked");
-        // Add navigation logic if needed
+        loadPage("/com/example/HomePage.fxml");
     }
 
     @FXML
@@ -64,11 +60,6 @@ public class HomePagePemController {
         loadPage("/com/example/laporanmslh.fxml");
     }
 
-    @FXML
-    private void handleFeedbackButtonAction() {
-        System.out.println("Feedback button clicked");
-        // Add navigation logic if needed
-    }
 
     @FXML
     private void handleKeluarButtonAction() {

@@ -41,6 +41,9 @@ public class DetailController {
     private Label deskripsiLabel;
 
     @FXML
+    private Label judulLabel;
+
+    @FXML
     private ComboBox<String> statusComboBox;
 
     @FXML
@@ -48,6 +51,9 @@ public class DetailController {
 
     @FXML
     private Button kirimButton;
+
+    @FXML
+    private Button backButton;
 
     private ArrayList<Issue> issueData = new ArrayList<Issue>();
     Issue laporanIni;
@@ -66,6 +72,7 @@ public class DetailController {
         lokasiLabel.setText("Jl. Aspal Abu, Sleman");
         deskripsiLabel.setText("Jalan Berlubang. Mohon segera ditanggapi.");
         fotoLaporanImageView.setImage(new Image("path/to/report_photo.png")); // Replace with actual image path
+        judulLabel.setText("jalan lubang");
 
         statusComboBox.getItems().addAll("Proses", "Selesai", "Pending");
     }
@@ -87,7 +94,7 @@ public class DetailController {
     }
 
     @FXML
-    private void goBack() {
+    private void backButton() {
         // Handle the back button logic here
         System.out.println("Back button clicked");
     }

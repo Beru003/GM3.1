@@ -26,9 +26,9 @@
                <children>
                   <HBox alignment="CENTER_LEFT" layoutX="222.0" layoutY="-1.0" prefHeight="111.0" prefWidth="1440.0" spacing="20.0" AnchorPane.bottomAnchor="914.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #49796B;" text="Button">
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #49796B;">
                            <graphic>
-                              <ImageView fitHeight="50.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="backButton" fitHeight="50.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@addons/pngs/back%20button.png" />
                                  </image>
@@ -49,31 +49,31 @@
                      <children>
                         <TableView prefHeight="85.0" prefWidth="684.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="TANGGAL" />
+                            <TableColumn prefWidth="703.1999931335449" text="TANGGAL" />
                           </columns>
                         </TableView>
-                        <ImageView fitHeight="303.0" fitWidth="704.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="fotoLaporanImageView" fitHeight="303.0" fitWidth="704.0" pickOnBounds="true" preserveRatio="true" />
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="55.0">
                            <children>
                               <TableView prefHeight="78.0" prefWidth="340.0">
                                 <columns>
-                                  <TableColumn prefWidth="75.0" text="JUDUL" />
+                                  <TableColumn prefWidth="320.8000122070313" text="JUDUL" />
                                 </columns>
                               </TableView>
                               <TableView layoutX="10.0" layoutY="10.0" prefHeight="78.0" prefWidth="345.0">
                                  <columns>
-                                    <TableColumn prefWidth="75.0" text="KATEGORI" />
+                                    <TableColumn prefWidth="326.4000244259834" text="KATEGORI" />
                                  </columns>
                               </TableView>
                            </children></HBox>
                         <TableView prefHeight="104.0" prefWidth="704.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="LOKASI" />
+                            <TableColumn prefWidth="703.2000122070312" text="LOKASI" />
                           </columns>
                         </TableView>
                         <TableView prefHeight="170.0" prefWidth="704.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="DESKRIPSI" />
+                            <TableColumn prefWidth="703.2000122070312" text="DESKRIPSI" />
                           </columns>
                         </TableView>
                      </children>
@@ -95,17 +95,20 @@
                               <Font size="25.0" />
                            </font>
                         </Label>
-                        <ComboBox prefHeight="54.0" prefWidth="533.0" />
+                        <ComboBox fx:id="statusComboBox" prefHeight="54.0" prefWidth="533.0" />
                         <Label layoutX="10.0" layoutY="168.0" prefHeight="79.0" prefWidth="533.0" style="-fx-text-fill: white;" text="Komentar" textFill="WHITE">
                            <font>
                               <Font size="25.0" />
                            </font>
                         </Label>
-                        <TextArea prefHeight="200.0" prefWidth="501.0" />
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="489.0" text="Kirim">
+                        <TextArea fx:id="komentarTextArea" prefHeight="200.0" prefWidth="501.0" />
+                        <Button fx:id="kirimButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="489.0" text="Kirim">
                            <font>
                               <Font size="20.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
                         </Button>
                         <Label layoutX="10.0" layoutY="301.0" prefHeight="79.0" prefWidth="533.0" style="-fx-text-fill: white;" text="Saya telah membaca dan menyetujui Kebijakan Privasi" textFill="WHITE">
                            <font>
