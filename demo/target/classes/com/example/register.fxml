@@ -165,7 +165,7 @@
                <children>
                   <ImageView fitHeight="736.0" fitWidth="869.0" nodeOrientation="INHERIT">
                      <image>
-                        <Image url="@addons/pngs/04.png" />
+                        <Image url="@addons/pngs/Toronto.jpeg" />
                      </image>
                   </ImageView>
                </children>
