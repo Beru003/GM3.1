@@ -31,9 +31,9 @@
                               </ImageView>
                            </children>
                         </HBox>
-                        <VBox layoutX="13.0" layoutY="174.0" prefHeight="260.0" prefWidth="247.0" AnchorPane.bottomAnchor="301.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="174.0">
+                        <VBox fx:id="navBar" layoutX="13.0" layoutY="174.0" prefHeight="260.0" prefWidth="247.0" AnchorPane.bottomAnchor="301.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="174.0">
                            <children>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="select-btn-pemerintah" stylesheets="@addons/Style.css" text="HOMEPAGE" textFill="#49796b">
+                              <Button fx:id="homeBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" prefHeight="48.0" prefWidth="247.0" styleClass="select-btn-pemerintah" stylesheets="@addons/Style.css" text="HOMEPAGE" textFill="#49796b">
                                  <graphic>
                                     <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -48,7 +48,7 @@
                                     <Insets left="45.0" />
                                  </padding>
                               </Button>
-                              <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" stylesheets="@addons/Style.css" text="LAPORAN">
+                              <Button fx:id="laporanBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleLaporanButtonAction" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" stylesheets="@addons/Style.css" text="LAPORAN">
                                  <graphic>
                                     <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -80,7 +80,7 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="619.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" text="KELUAR" textFill="#49796b">
+                        <Button fx:id="keluarBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="619.0" mnemonicParsing="false" onAction="#handleKeluarButtonAction" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" text="KELUAR" textFill="#49796b">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
