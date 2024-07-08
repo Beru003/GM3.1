@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
+import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -12,7 +13,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -26,22 +27,19 @@ public class DetailController {
     private URL location;
 
     @FXML
-    private ImageView fotoLaporanImageView;
+    private TextField kategoriTextField;
 
     @FXML
-    private Label kategoriLabel;
+    private TextField tanggalTextField;
 
     @FXML
-    private Label tanggalLabel;
+    private TextField lokasiTextField;
 
     @FXML
-    private Label lokasiLabel;
+    private TextField deskripsiTextField;
 
     @FXML
-    private Label deskripsiLabel;
-
-    @FXML
-    private Label judulLabel;
+    private TextField judulTextField;
 
     @FXML
     private ComboBox<String> statusComboBox;
@@ -67,12 +65,11 @@ public class DetailController {
         laporanIni = issueData.get(indeks);
         System.err.println(issueData.get(indeks).toString());
         
-        kategoriLabel.setText("Jalan");
-        tanggalLabel.setText("22 Juni 2024");
-        lokasiLabel.setText("Jl. Aspal Abu, Sleman");
-        deskripsiLabel.setText("Jalan Berlubang. Mohon segera ditanggapi.");
-        fotoLaporanImageView.setImage(new Image("path/to/report_photo.png")); // Replace with actual image path
-        judulLabel.setText("jalan lubang");
+        kategoriTextField.setText(laporanIni.getKategori());
+        tanggalTextField.setText(laporanIni.getTanggal());
+        lokasiTextField.setText(laporanIni.getLokasi());
+        deskripsiTextField.setText(laporanIni.getDeskripsi());
+        judulTextField.setText(laporanIni.getJudul());
 
         statusComboBox.getItems().addAll("Proses", "Selesai", "Pending");
     }
@@ -114,8 +111,7 @@ public class DetailController {
                         data[2],
                         data[3],
                         data[4],
-                        data[5],
-                        data[6]
+                        data[5]
                 );
 
                 issueData.add(issue);
@@ -128,16 +124,14 @@ public class DetailController {
         private String no;
         private String judul;
         private String kategori;
-        private String foto;
         private String lokasi;
         private String deskripsi;
         private String tanggal;
 
-        public Issue(String no, String judul, String kategori, String foto, String lokasi, String deskripsi, String tanggal) {
+        public Issue(String no, String judul, String kategori, String lokasi, String deskripsi, String tanggal) {
             this.no = no;
             this.judul = judul;
             this.kategori = kategori;
-            this.foto = foto;
             this.lokasi = lokasi;
             this.deskripsi = deskripsi;
             this.tanggal = tanggal;
@@ -167,14 +161,6 @@ public class DetailController {
             this.kategori = kategori;
         }
 
-        public String getFoto() {
-            return foto;
-        }
-
-        public void setFoto(String foto) {
-            this.foto = foto;
-        }
-
         public String getLokasi() {
             return lokasi;
         }
@@ -201,7 +187,7 @@ public class DetailController {
 
         @Override
         public String toString() {
-            return "Issue [no=" + no + ", judul=" + judul + ", kategori=" + kategori + ", foto=" + foto + ", lokasi="
+            return "Issue [no=" + no + ", judul=" + judul + ", kategori=" + kategori +", lokasi="
                     + lokasi + ", deskripsi=" + deskripsi + ", tanggal=" + tanggal + "]";
         }
 

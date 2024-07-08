@@ -4,9 +4,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -21,14 +20,14 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="1440.0" BorderPane.alignment="CENTER" />
          </center>
-         <top>
+         <bottom>
             <AnchorPane prefHeight="1024.0" prefWidth="709.0" BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="CENTER_LEFT" layoutX="222.0" layoutY="-1.0" prefHeight="67.0" prefWidth="1381.0" spacing="20.0" AnchorPane.bottomAnchor="958.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #49796B;">
+                        <Button fx:id="backButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #49796B;">
                            <graphic>
-                              <ImageView fx:id="backButton" fitHeight="50.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="50.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@addons/pngs/back%20button.png" />
                                  </image>
@@ -47,39 +46,18 @@
                   </HBox>
                   <VBox layoutX="55.0" layoutY="84.0" prefHeight="617.0" prefWidth="656.0" spacing="15.0">
                      <children>
-                        <TableView prefHeight="61.0" prefWidth="645.0">
-                          <columns>
-                            <TableColumn prefWidth="703.1999931335449" text="TANGGAL" />
-                          </columns>
-                        </TableView>
-<<<<<<< HEAD
-                        <ImageView fitHeight="219.0" fitWidth="654.0" pickOnBounds="true" preserveRatio="true" />
-=======
-                        <ImageView fx:id="fotoLaporanImageView" fitHeight="303.0" fitWidth="704.0" pickOnBounds="true" preserveRatio="true" />
->>>>>>> 81c9b2fa03725d6c88f36adc9d15d4a80795df82
+                        <TextField fx:id="tanggalTextField" prefHeight="62.0" prefWidth="344.0" promptText="tanggal">
+                           <VBox.margin>
+                              <Insets right="500.0" />
+                           </VBox.margin>
+                        </TextField>
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="55.0">
                            <children>
-                              <TableView prefHeight="78.0" prefWidth="340.0">
-                                <columns>
-                                  <TableColumn prefWidth="320.8000122070313" text="JUDUL" />
-                                </columns>
-                              </TableView>
-                              <TableView layoutX="10.0" layoutY="10.0" prefHeight="78.0" prefWidth="345.0">
-                                 <columns>
-                                    <TableColumn prefWidth="326.4000244259834" text="KATEGORI" />
-                                 </columns>
-                              </TableView>
+                              <TextField fx:id="judulTextField" prefHeight="80.0" prefWidth="300.0" promptText="Judul" />
+                              <TextField fx:id="kategoriTextField" prefHeight="80.0" prefWidth="300.0" promptText="Kategori" />
                            </children></HBox>
-                        <TableView prefHeight="104.0" prefWidth="704.0">
-                          <columns>
-                            <TableColumn prefWidth="703.2000122070312" text="LOKASI" />
-                          </columns>
-                        </TableView>
-                        <TableView prefHeight="150.0" prefWidth="704.0">
-                          <columns>
-                            <TableColumn prefWidth="703.2000122070312" text="DESKRIPSI" />
-                          </columns>
-                        </TableView>
+                        <TextField fx:id="lokasiTextField" prefHeight="100.0" prefWidth="656.0" promptText="lokasi" />
+                        <TextField fx:id="deskripsiTextField" prefHeight="120.0" prefWidth="656.0" promptText="Deskripsi" />
                      </children>
                   </VBox>
                   <VBox layoutX="766.0" layoutY="46.0" prefHeight="635.0" prefWidth="476.0">
@@ -105,13 +83,8 @@
                               <Font size="25.0" />
                            </font>
                         </Label>
-<<<<<<< HEAD
-                        <TextArea prefHeight="200.0" prefWidth="501.0" />
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="488.0" style="-fx-background-color: #1A4D2E;" text="Kirim">
-=======
                         <TextArea fx:id="komentarTextArea" prefHeight="200.0" prefWidth="501.0" />
                         <Button fx:id="kirimButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="489.0" text="Kirim">
->>>>>>> 81c9b2fa03725d6c88f36adc9d15d4a80795df82
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -128,7 +101,7 @@
                   </VBox>
                </children>
             </AnchorPane>
-         </top>
+         </bottom>
       </BorderPane>
    </children>
 </AnchorPane>

@@ -48,12 +48,6 @@ public class LaporanController {
     private TextArea deskripsiTextArea;
 
     @FXML
-    private Button selectFileButton;
-
-    @FXML
-    private ImageView fotoImageView;
-
-    @FXML
     private VBox navBar;
 
     @FXML
@@ -129,7 +123,6 @@ public class LaporanController {
             String.valueOf(nextId), // Generate unique ID based on the last issue number
             judul, 
             kategori, 
-            "fotoPath", 
             lokasi, 
             deskripsi, 
             tanggal
@@ -157,7 +150,6 @@ public class LaporanController {
             writer.append(newIssue.getNo()).append(",");
             writer.append(newIssue.getJudul()).append(",");
             writer.append(newIssue.getKategori()).append(",");
-            writer.append(newIssue.getFoto()).append(",");
             writer.append(newIssue.getLokasi()).append(",");
             writer.append(newIssue.getDeskripsi()).append(",");
             writer.append(newIssue.getTanggal()).append("\n");
@@ -180,7 +172,7 @@ public class LaporanController {
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
                 if (values.length == 7) {
-                    Issue issue = new Issue(values[0], values[1], values[2], values[3], values[4], values[5], values[6]);
+                    Issue issue = new Issue(values[0], values[1], values[2], values[3], values[4], values[5]);
                     issueData.add(issue);
                 }
             }
@@ -219,18 +211,6 @@ public class LaporanController {
             "Lain-lain"
         );
 
-        selectFileButton.setOnAction(event -> {
-            FileChooser fileChooser = new FileChooser();
-            fileChooser.getExtensionFilters().addAll(
-                    new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.jpeg", "*.gif"),
-                    new FileChooser.ExtensionFilter("Video Files", "*.mp4", "*.avi", "*.mov")
-            );
-            File selectedFile = fileChooser.showOpenDialog(new Stage());
-            if (selectedFile != null) {
-                // Set the file path to lokasiTextField or handle the file as needed
-                lokasiTextField.setText(selectedFile.getAbsolutePath());
-            }
-        });
 
         loadExistingData();
     }
@@ -239,16 +219,14 @@ public class LaporanController {
         private String no;
         private String judul;
         private String kategori;
-        private String foto;
         private String lokasi;
         private String deskripsi;
         private String tanggal;
 
-        public Issue(String no, String judul, String kategori, String foto, String lokasi, String deskripsi, String tanggal) {
+        public Issue(String no, String judul, String kategori, String lokasi, String deskripsi, String tanggal) {
             this.no = no;
             this.judul = judul;
             this.kategori = kategori;
-            this.foto = foto;
             this.lokasi = lokasi;
             this.deskripsi = deskripsi;
             this.tanggal = tanggal;
@@ -276,14 +254,6 @@ public class LaporanController {
 
         public void setKategori(String kategori) {
             this.kategori = kategori;
-        }
-
-        public String getFoto() {
-            return foto;
-        }
-
-        public void setFoto(String foto) {
-            this.foto = foto;
         }
 
         public String getLokasi() {

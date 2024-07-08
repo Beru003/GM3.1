@@ -151,7 +151,7 @@
                               <TextField fx:id="lokasiTextField" minHeight="36.0" prefWidth="278.0" promptText="Lokasi" style="-fx-background-radius: 5px;" />
                            </children>
                         </VBox>
-                        <VBox layoutX="604.0" layoutY="382.0" prefHeight="231.0" prefWidth="278.0" spacing="15.0">
+                        <VBox layoutX="151.0" layoutY="385.0" prefHeight="231.0" prefWidth="650.0" spacing="15.0">
                            <children>
                               <Label prefHeight="17.0" prefWidth="214.0" text="DESKRIPSI" textFill="WHITE">
                                  <font>
@@ -159,42 +159,6 @@
                                  </font>
                               </Label>
                               <TextArea fx:id="deskripsiTextArea" prefHeight="192.0" prefWidth="278.0" promptText="Tulis deskripsi kejadian" style="-fx-background-color: #609a8a;" />
-                           </children>
-                        </VBox>
-                        <VBox layoutX="44.0" layoutY="383.0" prefHeight="226.0" prefWidth="414.0" spacing="10.0">
-                           <children>
-                              <Label text="FOTO" textFill="WHITE">
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                              </Label>
-                              <AnchorPane prefHeight="140.0" prefWidth="326.0" styleClass="field-text" stylesheets="@addons/Style.css">
-                                 <children>
-                                    <VBox alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="170.0" prefWidth="368.0" spacing="10.0">
-                                       <children>
-                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@addons/pngs/feather_upload-cloud.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Label text="Select a file or drag and drop here" textFill="WHITE">
-                                             <font>
-                                                <Font size="15.0" />
-                                             </font>
-                                          </Label>
-                                          <Label text="JPG, PNG or MP4, file size no more than 10MB" textFill="#d9d9d9">
-                                             <font>
-                                                <Font size="10.0" />
-                                             </font>
-                                          </Label>
-                                          <Button fx:id="selectFileButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: white; -fx-background-radius: 6;" text="SELECT FILE" />
-                                       </children>
-                                       <padding>
-                                          <Insets bottom="20.0" />
-                                       </padding>
-                                    </VBox>
-                                 </children>
-                              </AnchorPane>
                            </children>
                         </VBox>
                         <Button fx:id="kirimBtn" layoutX="52.0" layoutY="669.0" mnemonicParsing="false" onAction="#handleKirimButtonAction" prefHeight="47.0" prefWidth="825.0" style="-fx-background-color: #2A4E44; -fx-background-radius: 10px;" text="Kirim" textFill="WHITE">

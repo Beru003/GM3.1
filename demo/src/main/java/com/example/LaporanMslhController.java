@@ -34,9 +34,6 @@ public class LaporanMslhController {
     private TableColumn<Issue, String> columnKategori;
 
     @FXML
-    private TableColumn<Issue, String> columnFoto;
-
-    @FXML
     private TableColumn<Issue, String> columnLokasi;
 
     @FXML
@@ -58,7 +55,6 @@ public class LaporanMslhController {
         columnNo.setCellValueFactory(new PropertyValueFactory<>("no"));
         columnJudul.setCellValueFactory(new PropertyValueFactory<>("judul"));
         columnKategori.setCellValueFactory(new PropertyValueFactory<>("kategori"));
-        columnFoto.setCellValueFactory(new PropertyValueFactory<>("foto"));
         columnLokasi.setCellValueFactory(new PropertyValueFactory<>("lokasi"));
         columnDeskripsi.setCellValueFactory(new PropertyValueFactory<>("deskripsi"));
         columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggal"));
@@ -129,8 +125,7 @@ public class LaporanMslhController {
                         data[2],
                         data[3],
                         data[4],
-                        data[5],
-                        data[6]
+                        data[5]
                 );
 
                 issueData.add(issue);
@@ -163,7 +158,6 @@ public class LaporanMslhController {
                 writer.append(issue.getNo()).append(",");
                 writer.append(issue.getJudul()).append(",");
                 writer.append(issue.getKategori()).append(",");
-                writer.append(issue.getFoto()).append(",");
                 writer.append(issue.getLokasi()).append(",");
                 writer.append(issue.getDeskripsi()).append(",");
                 writer.append(issue.getTanggal()).append("\n");
@@ -179,16 +173,14 @@ public class LaporanMslhController {
         private String no;
         private String judul;
         private String kategori;
-        private String foto;
         private String lokasi;
         private String deskripsi;
         private String tanggal;
 
-        public Issue(String no, String judul, String kategori, String foto, String lokasi, String deskripsi, String tanggal) {
+        public Issue(String no, String judul, String kategori, String lokasi, String deskripsi, String tanggal) {
             this.no = no;
             this.judul = judul;
             this.kategori = kategori;
-            this.foto = foto;
             this.lokasi = lokasi;
             this.deskripsi = deskripsi;
             this.tanggal = tanggal;
@@ -216,14 +208,6 @@ public class LaporanMslhController {
 
         public void setKategori(String kategori) {
             this.kategori = kategori;
-        }
-
-        public String getFoto() {
-            return foto;
-        }
-
-        public void setFoto(String foto) {
-            this.foto = foto;
         }
 
         public String getLokasi() {

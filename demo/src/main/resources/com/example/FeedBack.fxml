@@ -20,7 +20,7 @@
          <left>
             <AnchorPane prefHeight="1024.0" prefWidth="275.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="849.5" prefWidth="275.0" styleClass="nav-bar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <AnchorPane layoutX="-40.0" layoutY="329.0" prefHeight="735.0" prefWidth="275.0" styleClass="nav-bar" stylesheets="@addons/Style.css" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <VBox layoutX="13.0" layoutY="148.0" prefHeight="210.0" prefWidth="230.0">
                            <children>
@@ -99,51 +99,51 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label layoutX="67.0" layoutY="50.0" text="Detail Laporan" textFill="WHITE">
+                  <Label layoutX="67.0" layoutY="24.0" text="Detail Laporan" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="30.0" />
                      </font>
                   </Label>
-                  <TableView layoutX="708.0" layoutY="169.0" prefHeight="58.0" prefWidth="349.0">
+                  <TableView layoutX="655.0" layoutY="170.0" prefHeight="58.0" prefWidth="349.0">
                     <columns>
                       <TableColumn prefWidth="348.8000122070313" text="JUDUL" />
                     </columns>
                   </TableView>
-                  <TableView layoutX="708.0" layoutY="258.0" prefHeight="57.0" prefWidth="348.0">
+                  <TableView layoutX="656.0" layoutY="262.0" prefHeight="57.0" prefWidth="348.0">
                      <columns>
                         <TableColumn prefWidth="347.20001220703125" text="KATEGORI" />
                      </columns>
                   </TableView>
-                  <TableView layoutX="708.0" layoutY="347.0" prefHeight="76.0" prefWidth="346.0">
+                  <TableView layoutX="656.0" layoutY="347.0" prefHeight="76.0" prefWidth="346.0">
                      <columns>
                         <TableColumn prefWidth="345.6000122070312" text="LOKASI" />
                      </columns>
                   </TableView>
-                  <HBox alignment="CENTER_LEFT" layoutX="69.0" layoutY="80.0" prefHeight="100.0" prefWidth="378.0" spacing="20.0">
+                  <HBox alignment="CENTER_LEFT" layoutX="67.0" layoutY="59.0" prefHeight="40.0" prefWidth="378.0" spacing="20.0">
                      <children>
                         <Label text="STATUS:" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label text="Sudah Ditangani" textFill="WHITE">
+                        <Label fx:id="statusLabel" text="Sudah Ditangani" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
                      </children>
                   </HBox>
-                  <TableView layoutX="69.0" layoutY="171.0" prefHeight="261.0" prefWidth="445.0">
+                  <TableView layoutX="67.0" layoutY="98.0" prefHeight="203.0" prefWidth="326.0">
                      <columns>
-                        <TableColumn prefWidth="444.7999969482422" text="FOTO" />
+                        <TableColumn prefWidth="345.59999694824216" text="FOTO" />
                      </columns>
                   </TableView>
-                  <TableView layoutX="708.0" layoutY="442.0" prefHeight="170.0" prefWidth="348.0">
+                  <TableView layoutX="656.0" layoutY="450.0" prefHeight="170.0" prefWidth="348.0">
                      <columns>
                         <TableColumn prefWidth="347.20001220703125" text="DESKRIPSI" />
                      </columns>
                   </TableView>
-                  <HBox alignment="CENTER_LEFT" layoutX="705.0" layoutY="79.0" prefHeight="100.0" prefWidth="378.0" spacing="20.0">
+                  <HBox fx:id="tanggalDilaporkanLabel" alignment="CENTER_LEFT" layoutX="647.0" layoutY="9.0" prefHeight="100.0" prefWidth="378.0" spacing="20.0">
                      <children>
                         <Label text="TANGGAL:" textFill="WHITE">
                            <font>
@@ -157,12 +157,12 @@
                         </Label>
                      </children>
                   </HBox>
-                  <TableView layoutX="68.0" layoutY="458.0" prefHeight="178.0" prefWidth="445.0">
+                  <TableView layoutX="67.0" layoutY="320.0" prefHeight="130.0" prefWidth="324.0">
                      <columns>
-                        <TableColumn prefWidth="444.7999969482422" text="TANGGAPAN" />
+                        <TableColumn prefWidth="323.1999969482422" text="TANGGAPAN" />
                      </columns>
                   </TableView>
-                  <VBox layoutX="74.0" layoutY="676.0" prefHeight="288.0" prefWidth="984.0" spacing="10.0">
+                  <VBox layoutX="67.0" layoutY="453.0" prefHeight="284.0" prefWidth="475.0" spacing="10.0">
                      <children>
                         <Label text="BERI FEEDBACK" textFill="WHITE">
                            <font>

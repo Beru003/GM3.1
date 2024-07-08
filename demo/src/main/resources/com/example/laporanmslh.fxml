@@ -30,10 +30,9 @@
                                         <TableColumn fx:id="columnNo" prefWidth="44.79995650053024" text="No" />
                                           <TableColumn fx:id="columnJudul" prefWidth="105.0" text="Judul" />
                                           <TableColumn fx:id="columnKategori" prefWidth="105.0" text="Kategori" />
-                                          <TableColumn fx:id="columnFoto" prefWidth="100.0" text="foto" />
                                           <TableColumn fx:id="columnLokasi" prefWidth="200.0" text="Lokasi" />
-                                        <TableColumn fx:id="columnDeskripsi" prefWidth="300.0" text="Deskripsi" />
-                                          <TableColumn fx:id="columnTanggal" prefWidth="100.0" text="tanggal" />
+                                        <TableColumn fx:id="columnDeskripsi" prefWidth="328.8000793457031" text="Deskripsi" />
+                                          <TableColumn fx:id="columnTanggal" prefWidth="171.99991455078123" text="tanggal" />
                                       </columns>
                                     </TableView>
                                     <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
