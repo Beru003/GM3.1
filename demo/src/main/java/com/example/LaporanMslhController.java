@@ -48,6 +48,9 @@ public class LaporanMslhController {
     @FXML
     private Button lanjutbButton;
 
+    @FXML
+    private Button homeButton;
+
     private ObservableList<Issue> issueData = FXCollections.observableArrayList();
 
     @FXML
@@ -106,6 +109,17 @@ public class LaporanMslhController {
             stage.setScene(scene);    
             stage.show();
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void handleHomeButtonAction() {
+        System.out.println("Home button clicked");
+        try {
+            loadPage("/com/example/HomePagePem.fxml");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

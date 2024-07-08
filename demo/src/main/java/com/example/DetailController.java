@@ -11,12 +11,16 @@ import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 public class DetailController {
 
@@ -41,17 +45,6 @@ public class DetailController {
     @FXML
     private TextField judulTextField;
 
-    @FXML
-    private ComboBox<String> statusComboBox;
-
-    @FXML
-    private TextArea komentarTextArea;
-
-    @FXML
-    private Button kirimButton;
-
-    @FXML
-    private Button backButton;
 
     private ArrayList<Issue> issueData = new ArrayList<Issue>();
     Issue laporanIni;
@@ -71,7 +64,6 @@ public class DetailController {
         deskripsiTextField.setText(laporanIni.getDeskripsi());
         judulTextField.setText(laporanIni.getJudul());
 
-        statusComboBox.getItems().addAll("Proses", "Selesai", "Pending");
     }
     private void bacaIndeks(){
         try (BufferedReader br = new BufferedReader(new FileReader("indexL.csv"))) {
@@ -79,21 +71,29 @@ public class DetailController {
         catch (Exception e) {}
         // TODO: handle exception
     }
-    @FXML
-    private void kirimTanggapan() {
-        // Handle the response submission logic here
-        String status = statusComboBox.getValue();
-        String komentar = komentarTextArea.getText();
-        System.out.println("Status: " + status + ", Komentar: " + komentar);
-        // Optionally clear the fields after submission
-        statusComboBox.setValue(null);
-        komentarTextArea.clear();
-    }
-
+    
     @FXML
     private void backButton() {
         // Handle the back button logic here
         System.out.println("Back button clicked");
+        try {
+            loadPage("/com/example/laporanmslh.fxml");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+     private void loadPage(String fxmlFile) throws IOException {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            Parent root = loader.load();
+            Scene scene = new Scene (root);
+            Stage stage = new Stage();
+            stage.setScene(scene);    
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void loadCSVData() {

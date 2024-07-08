@@ -83,11 +83,11 @@
                   </HBox>
                   <VBox layoutX="13.0" layoutY="174.0" prefHeight="260.0" prefWidth="247.0" AnchorPane.bottomAnchor="301.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="174.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" stylesheets="@addons/Style.css" text="VERIFIKASI">
+                        <Button fx:id="homeButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" stylesheets="@addons/Style.css" text="HOMEPAGE">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@addons/pngs/verification.png" />
+                                    <Image url="@addons/pngs/home.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -113,24 +113,9 @@
                               <Insets left="45.0" />
                            </padding>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="78.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" text="DASHBOARD">
-                           <graphic>
-                              <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@addons/pngs/verification.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <font>
-                              <Font name="System Bold" size="15.0" />
-                           </font>
-                           <padding>
-                              <Insets left="45.0" />
-                           </padding>
-                        </Button>
                      </children>
                   </VBox>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="619.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" text="DASHBOARD" textFill="#49796b">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="12.0" layoutY="619.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="247.0" styleClass="btn-navbar-pemerintah" text="KELUAR" textFill="#49796b">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>

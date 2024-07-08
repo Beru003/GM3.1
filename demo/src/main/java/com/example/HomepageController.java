@@ -27,9 +27,6 @@ public class HomepageController {
     private HBox laporkanButton;
 
     @FXML
-    private HBox feedbackButton;
-
-    @FXML
     private HBox keluarButton;
 
     @FXML
@@ -48,7 +45,6 @@ public class HomepageController {
     private void initialize() {
         homeBtn.setOnAction(event -> handleHomeButtonAction());
         laporkanBtn.setOnAction(event -> handleLaporkanButtonAction());
-        feedbackBtn.setOnAction(event -> handleFeedbackButtonAction());
         keluarBtn.setOnAction(event -> handleKeluarButtonAction());
     }
 
@@ -65,17 +61,10 @@ public class HomepageController {
     }
 
     @FXML
-    private void handleFeedbackButtonAction() {
-        System.out.println("Feedback button clicked");
-        loadPage("/com/example/Feedback.fxml");
-    }
-
-    @FXML
     private void handleKeluarButtonAction() {
         System.out.println("Keluar button clicked");
         // Close the application or navigate to login
-        Stage stage = (Stage) keluarButton.getScene().getWindow();
-        stage.close();
+        loadPage("/com/example/register.fxml");
     }
 
     // Method to load a new FXML page
