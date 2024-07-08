@@ -59,6 +59,14 @@
     -fx-background-color: white;
     -fx-background-radius: 30px;
 }
+
+.rounded-image {
+    -fx-clip: rect(0, 0, 0, 0); /* Clear existing clip */
+    -fx-background-image: url('image.png'); /* Replace with your image URL */
+    -fx-background-size: cover; /* Cover the area */
+    -fx-background-position: center; /* Center the image */
+    -fx-border-radius: 5px; /* Set desired border radius */
+  }
   
 
 
