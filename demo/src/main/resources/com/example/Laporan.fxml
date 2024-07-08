@@ -101,7 +101,7 @@
                <children>
                   <AnchorPane layoutX="41.0" layoutY="37.0" prefHeight="735.0" prefWidth="1025.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label layoutX="40.0" layoutY="41.0" prefHeight="57.0" prefWidth="432.0" text="Hai, Louis! Perlu Bantuan?" textFill="WHITE">
+                        <Label layoutX="40.0" layoutY="41.0" prefHeight="57.0" prefWidth="432.0" text="Hai! Perlu Bantuan?" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="30.0" />
                            </font>
