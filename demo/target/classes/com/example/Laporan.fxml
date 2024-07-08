@@ -148,7 +148,7 @@
                                     <Font size="20.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="lokasiTextField" minHeight="36.0" prefWidth="278.0" promptText="Lokasi" styleClass="field-text" stylesheets="@addons/Style.css" />
+                              <TextField fx:id="lokasiTextField" minHeight="36.0" prefWidth="278.0" promptText="Lokasi" style="-fx-background-radius: 5px;" />
                            </children>
                         </VBox>
                         <VBox layoutX="604.0" layoutY="382.0" prefHeight="231.0" prefWidth="278.0" spacing="15.0">
