@@ -44,7 +44,21 @@
 .field-diluartext {
     -fx-background-color: #609a8a; /* Set background color */
     -fx-text-fill: black; /* Set text color to white for readability */
-  }
+}
+
+.transparent-pane {
+    -fx-background-color: transparent;
+}
+
+.search-btn {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.laporan-terbaru {
+    -fx-background-color: white;
+    -fx-background-radius: 30px;
+}
   
 
 
