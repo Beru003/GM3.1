@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="detail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" styleClass="primary-color" stylesheets="@addons/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.DetailController">
+<AnchorPane fx:id="detail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1300.0" styleClass="primary-color" stylesheets="@addons/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.DetailController">
    <children>
       <BorderPane layoutX="387.0" layoutY="178.0" prefHeight="1024.0" prefWidth="1440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -24,7 +24,7 @@
          <top>
             <AnchorPane prefHeight="1024.0" prefWidth="709.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER_LEFT" layoutX="222.0" layoutY="-1.0" prefHeight="111.0" prefWidth="1440.0" spacing="20.0" AnchorPane.bottomAnchor="914.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+                  <HBox alignment="CENTER_LEFT" layoutX="222.0" layoutY="-1.0" prefHeight="67.0" prefWidth="1381.0" spacing="20.0" AnchorPane.bottomAnchor="958.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
                      <children>
                         <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="65.0" style="-fx-background-color: #49796B;" text="Button">
                            <graphic>
@@ -45,14 +45,14 @@
                         <Insets left="50.0" />
                      </padding>
                   </HBox>
-                  <VBox layoutX="55.0" layoutY="115.0" prefHeight="810.0" prefWidth="704.0" spacing="15.0">
+                  <VBox layoutX="55.0" layoutY="84.0" prefHeight="617.0" prefWidth="656.0" spacing="15.0">
                      <children>
-                        <TableView prefHeight="85.0" prefWidth="684.0">
+                        <TableView prefHeight="61.0" prefWidth="645.0">
                           <columns>
                             <TableColumn prefWidth="75.0" text="TANGGAL" />
                           </columns>
                         </TableView>
-                        <ImageView fitHeight="303.0" fitWidth="704.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="219.0" fitWidth="654.0" pickOnBounds="true" preserveRatio="true" />
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="55.0">
                            <children>
                               <TableView prefHeight="78.0" prefWidth="340.0">
@@ -71,14 +71,14 @@
                             <TableColumn prefWidth="75.0" text="LOKASI" />
                           </columns>
                         </TableView>
-                        <TableView prefHeight="170.0" prefWidth="704.0">
+                        <TableView prefHeight="150.0" prefWidth="704.0">
                           <columns>
                             <TableColumn prefWidth="75.0" text="DESKRIPSI" />
                           </columns>
                         </TableView>
                      </children>
                   </VBox>
-                  <VBox layoutX="893.0" layoutY="112.0" prefHeight="814.0" prefWidth="488.0">
+                  <VBox layoutX="766.0" layoutY="46.0" prefHeight="635.0" prefWidth="476.0">
                      <children>
                         <Label prefHeight="93.0" prefWidth="488.0" style="-fx-text-fill: white;" text="Berikan Tanggapan" textFill="WHITE">
                            <font>
@@ -102,14 +102,14 @@
                            </font>
                         </Label>
                         <TextArea prefHeight="200.0" prefWidth="501.0" />
-                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="489.0" text="Kirim">
+                        <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="488.0" style="-fx-background-color: #1A4D2E;" text="Kirim">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <Label layoutX="10.0" layoutY="301.0" prefHeight="79.0" prefWidth="533.0" style="-fx-text-fill: white;" text="Saya telah membaca dan menyetujui Kebijakan Privasi" textFill="WHITE">
+                        <Label layoutX="10.0" layoutY="301.0" prefHeight="62.0" prefWidth="488.0" style="-fx-text-fill: white;" text="Saya telah membaca dan menyetujui Kebijakan Privasi" textFill="WHITE">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="15.0" />
                            </font>
                         </Label>
                      </children>
